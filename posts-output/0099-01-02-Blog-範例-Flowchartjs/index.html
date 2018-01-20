@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>(print &quot;Lisp Rocks&quot;): 使用 Rapid Environment Editor 備份環境變數</title>
-    <link rel="canonical" href="http://lisp.rocks/posts-output/2018-01-19-Windows中使用Rapid-Environment-Editor備份環境變數/">
+    <title>(print &quot;Lisp Rocks&quot;): Blog 範例 - flowchart.js</title>
+    <link rel="canonical" href="http://lisp.rocks/posts-output/0099-01-02-Blog-範例-Flowchartjs/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -58,44 +58,30 @@
     <div id="post-meta" class="row">
         
     </div>
-    <h2>使用 Rapid Environment Editor 備份環境變數</h2>
+    <h2>Blog 範例 - flowchart.js</h2>
         <div id="post-date">
-            January 19, 2018
+            December 31, 0098
         </div>
 </div>
 <div>
     
-    <h1><a name=""></a></h1><h2><a name=""></a></h2><p>之前一直想要備份 Windows 的環境變數，然後找到一個好用的軟體 <a href='https://www.rapidee.com/en/download'>Rapid Environment Editor</a></p><p>這個軟體能備份和幫忙檢查有哪些環境變數是無效的</p><p>無效的環境變數會以紅色顯示，其中語言也有簡體中文版本，對 Windows 不熟也可以使用</p><p>所有變更只有在儲存之後才會真的變更，也不用擔心亂改改錯</p><p>備份的部分存成 <code>.reg</code> 檔案，可以再把它讀取回來</p><p>內容就像是</p><p><br></p><pre><code>; System variables
-...
-&#91;HKEY&#95;LOCAL&#95;MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment&#93;
-&quot;CCP&#95;JOBTEMPLATE&quot;=&quot;Default&quot;
-&quot;CCP&#95;LOGROOT&#95;USR&quot;=hex&#40;2&#41;:25,4C,4F,43,41,4C,41,50,50,44,41,54,41,25,5C,4D,69,63,72,6F,73,6F,66,74,5C,48,70,63,5C,4C,6F,67,46,69,6C,65,73,5C,00
-&quot;ChocolateyInstall&quot;=&quot;C:\\ProgramData\\chocolatey&quot;
-&quot;ComSpec&quot;=hex&#40;2&#41;:25,53,79,73,74,65,6D,52,6F,6F,74,25,5C,73,79,73,74,65,6D,33,32,5C,63,6D,64,2E,65,78,65,00
-&quot;CUDA&#95;PATH&quot;=&quot;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v8.0&quot;
-&quot;CUDA&#95;PATH&#95;V8&#95;0&quot;=&quot;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v8.0&quot;
-&quot;DokanLibrary1&quot;=&quot;C:\\Program Files\\Dokan\\Dokan Library-1.0.0\\&quot;
-&quot;GNUPLOT&#95;LIB&quot;=&quot;C:\\Program Files\\gnuplot\\demo;C:\\Program Files\\gnuplot\\demo\\games;C:\\Program Files\\gnuplot\\share&quot;
-&quot;GNUTERM&quot;=&quot;windows&quot;
-...</code></pre><p>其中蠻有趣的是部分會用 <code>hex</code> 來表示，不知道那是什麼意思&#x2026;</p><h2><a name="參考資料"></a>參考資料</h2><ol><li><a href='http://nelson.pixnet.net/blog/post/22360384-%5B%E5%88%86%E4%BA%AB%5D-rapid-environment-editor&mdash;%E6%96%B9%E4%BE%BF%E4%BF%AE%E6%94%B9%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8'>{分享} Rapid Environment Editor - 方便修改環境變數的工具</a></li><li><a href='https://dotblogs.com.tw/echo/2017/07/13/windows_tool_rapidenvironmenteditor'>【Windows】環境變數管理工具：Rapid Environment Editor</a></li></ol>
+    <h1><a name=""></a></h1><h2><a name=""></a></h2><p>本文章只是單純測試本部落格如何使用 <a href='https://github.com/adrai/flowchart.js/'>flowchart.js</a></p><p>方便未來在文章中插入使用</p><p><script src="http://flowchart.js.org/raphael-min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.8.0/flowchart.min.js"></script> <div id="diagram"></div><br><br> <div id="diagram2"></div> <script src="../../data/flowchart-example.js"></script></p>
 </div>
 
 <div id="post-tags">
     <b>Tags: </b>
     
-    <a href="/tags-output/backup/">backup</a>
-    
-    <a href="/tags-output/windows/">windows</a>
+    <a href="/tags-output/"></a>
     
 </div>
 
 
     <div id="prev-next">
         
-        <a href="/posts-output/2018-01-20-Emacs-中使用-popup-tip-彈出自訂內容/">&laquo; Emacs-中使用-popup-tip-彈出自訂內容</a>
+        <a href="/posts-output/0099-01-03-Blog-範例-jsPDF/">&laquo; Blog 範例 - jsPDF</a>
         
         
-        <a class="right" href="/posts-output/2018-01-17-〈為你自己學Git〉閱讀筆記/">〈為你自己學Git〉閱讀筆記 &raquo;</a>
+        <a class="right" href="/posts-output/0099-01-01-Blog-範例-Chartjs/">Blog 範例 - Chart.js &raquo;</a>
         
     </div>
 
@@ -104,8 +90,8 @@
 
     <script type="text/javascript">
         var disqus_config = function () {
-            this.page.url = "http://lisp.rocks/posts-output/2018-01-19-Windows中使用Rapid-Environment-Editor備份環境變數/";
-            this.page.identifier = "使用 Rapid Environment Editor 備份環境變數";
+            this.page.url = "http://lisp.rocks/posts-output/0099-01-02-Blog-範例-Flowchartjs/";
+            this.page.identifier = "Blog 範例 - flowchart.js";
         };
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
