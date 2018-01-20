@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>(print &quot;Lisp Rocks&quot;): 〈C++API設計〉閱讀筆記</title>
+    <link rel="canonical" href="http://lisp.rocks/posts-output/2017-12-30-C++API設計閱讀筆記/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/github.min.css">
+    <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> 
+    <link href="/css/screen.css" rel="stylesheet" type="text/css" />
+    <script>
+    window.klipse_settings = {
+        selector: '.language-klipse' // css selector for the html elements you want to klipsify
+    };
+    </script>
+    <script src="/js/highlight.pack.js" type="text/javascript"></script>
+    <script>
+    hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-title" href="/">(print &quot;Lisp Rocks&quot;)</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" style="position: absolute; right: 0;">
+            <ul class="nav navbar-nav">
+                <li ><a href="/">Home</a></li>
+                <li ><a href="/archives/">Archives</a></li>
+                
+                <li >
+                    <a href="/pages-output/about/">About</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+        <!--/.container-fluid -->
+    </nav>
+    <div>
+        <div>
+            <div>
+                <div id="content">
+                    
+<div id="post">
+    <div class="post-header">
+    <div id="post-meta" class="row">
+        
+    </div>
+    <h2>〈C++API設計〉閱讀筆記</h2>
+        <div id="post-date">
+            December 30, 2017
+        </div>
+</div>
+<div>
+    
+    <h1><a name=""></a></h1><h2><a name=""></a></h2><p>最近讀完了 <a href='http://www.books.com.tw/products/0010633959'>C++ API設計</a> 中文版，覺得裡面有很多觀念很不錯，都是自己缺乏的知識</p><p>因此稍微在此把各節大綱做個簡要筆記，留做未來工作上做參考</p><p>尤其這本書的目錄含蠻詳細的，光是目錄就能當作一個 Checklist 來使用了</p><p><br></p><h3><a name="目錄的重點摘要（非書籍目錄，有個人的更改）"></a>目錄的重點摘要（非書籍目錄，有個人的更改）</h3><p><br></p><p><strong>1 . 為什麼要使用 API</strong></p><p><hr></p><p><strong>1-1. 可以有更健壯的程式碼</strong></p><p>1-1-1. 隱藏實作細節</p><p>1-1-2. 提高程式碼壽命</p><p>1-1-3. 促進模組化</p><p>1-1-4. 減少重複的程式碼</p><p>1-1-5. 移除硬編碼</p><p>1-1-6. 易於改變實作</p><p>1-1-7. 易於優化</p><p><br></p><p><strong>1-2. 可以提高程式碼重用性</strong></p><p>1-2-1. 更一般性的介面</p><p>1-2-2. 對於功能需求更深刻的了解</p><p>1-2-3. 顧及開發人員與客戶的共同利益</p><p>1-2-4. 全球化以及現代化的互相協作</p><p><br></p><p><strong>1-3. 對平行開發可以更友善</strong></p><p>1-3-1. 簡化關聯開發工作</p><p>1-3-2. 提供簡單實作以便編譯與連結</p><p>1-3-3. 提早撰寫單元測試</p><p>1-3-4. 獨立工作並減少冗餘溝通</p><p><br></p><h3><a name="2.&#95;api&#95;的基本品質"></a>2. API 的基本品質</h3><p><hr></p><p><strong>2-1. 問題領域塑模</strong></p><p>2-1-1. 良好的抽象概念</p><blockquote><p> 1.  高層次概念的明確表達 ( ex: UML ) </p><p> 2.  不公開底層的實作 </p><p> 3.  操作是有意義的（ 對非技術人員是顯而易見的 ） </p><p> 4.  類別反映了名稱及其方法 </p></blockquote><p>2-1-2. 塑模關鍵物件 Object modeling</p><blockquote><p> 1.  定義主要物件的集合 </p><p> 2.  提供所需的操作 </p><p> 3.  界定物件彼此的關係 </p></blockquote><p><br></p><p><strong>【 2-2. 隱藏實作細節 information hiding 】</strong></p><p><strong>2-2-1. 物理隱藏：宣告與定義</strong></p><p>2-2-1-1. 宣告 declaration 引入名稱和型別給編譯器，沒有分配記憶體</p><pre><code>extern int i
+
+class MyClass</code></pre><p>2-2-1-2. 定義 definition 提供型別結構的詳細資訊為變數分配記憶體</p><pre><code>int i = 0 ;
+
+void MyFunc&#40;int value&#41;
+{
+ ...
+}</code></pre><p>2-2-1-3. 一般來說在 .h 宣告，在 .cpp 定義</p><p>2-2-1-4. 在 .h 宣告且定義，會公開實作細節，是種不好的作法</p><p><br></p><p><strong>2-2-2. 邏輯隱藏：封裝 Encapsulation</strong></p><p>2-2-2-1. 封裝的目的是限制其他物件存取權限</p><p>2-2-2-2. 封裝是將 API 公共介面和底層實作分開的過程</p><p>2-2-2-3. 若沒有好的封裝，高昂代價的重構（refactoring）將無可避免</p><p>2-2-2-4. 透過程式語言存取的特性，將 API 資訊隱藏到最高</p><p><br></p><p><strong>2-2-3. 隱藏成員變數</strong></p><p>2-2-3-1. 封裝也可以是一種方法將資料操作方法的綁定</p><p>2-2-3-2. 良好的 API 永遠不公開成員變數</p><p>2-2-3-3. 資料成員成為 API 邏輯介面的話，應設定 getter / setter 間接存取</p><blockquote><p> getter / setter 進行間接存取的好處： </p><p> 1 . <strong>驗證</strong> ：對輸入輸出參數進行驗證再進行操作 </p><p> 2 . <strong>延遲運算</strong> ：對成本高昂的運算做條件控制，不到非不得已不執行 ( lazy evaluation ) </p><p> 3 . <strong>快取</strong> ：儲存需要經常使用的值，被要求時直接返值 ( caching ) </p><p> 4 . <strong>額外的運算</strong> ：當被嘗試存取特定變數時，順便進行其他操作 </p><p> 例如 (a) 留下存取紀錄 (b) 修改對應檔案 </p><p> 5 . <strong>通知</strong> ：某些物件可能需要監聽某個變數是否被改變， </p><p> 例如 (a) 控制變數（ ex: progress bar） (b) 發出修改通知 </p><p> 6 . <strong>除錯</strong> ：可能想要增加日誌（ log ）語句，或是增加 Assert 語句來執行一些假設 </p><p> 7 . <strong>同步</strong> ：每當有值被存取時加入互斥鎖定（mutex locking） </p><p> 8-1. <strong>更細的存取控制 1</strong> ：讓成員變數變 public ，讓使用者可以寫入，唯一理由只有效能 </p><p> 例如：對大量物件執行一個效能緊迫的迴圈（直接存取 public 比 getter / setter 快 2-3 倍） </p><p> 8-2. <strong>更細的存取控制 2</strong> ：不提供 setter 使得參數為 read-only </p><p> 9 . <strong>維持不變的關係</strong> ：將內部資料值進行彼此依賴 </p></blockquote><p>2-2-3-4. 資料成員應該總是被宣告為 private 而非 public 或 protected</p><p>2-2-3-5. 試著將 public 成員變數以 inline getter / setter 重寫並計時，看是否值得 public</p><p><br></p><p><strong>2-2-4. 隱藏實作方法</strong></p><p>2-2-4-1. 應該將類別穩定的介面和內部設計的實作分離</p><p>2-2-4-2. 切勿返回 private 成員變數的非 const 指標和參考，會破壞封裝</p><p>2-2-4-3. 採用 pimpl 慣用法，將實作細節完全隱藏</p><p>2-2-4-4. 如果不採用 pipml ，則可在 cpp 檔案中宣告 private 函式為 static ，而在表頭宣告為 private</p>
+</div>
+
+<div id="post-tags">
+    <b>Tags: </b>
+    
+    <a href="/tags-output/reading/">reading</a>
+    
+    <a href="/tags-output/API/">API</a>
+    
+    <a href="/tags-output/C++/">C++</a>
+    
+</div>
+
+
+    <div id="prev-next">
+        
+        <a href="/posts-output/2018-01-01-Emacs-中對特定-mode-綁定特定的-imenu-關鍵字/">&laquo; Emacs 中對特定 mode 綁定自訂 imenu 匹配</a>
+        
+        
+        <a class="right" href="/posts-output/2017-12-28-WindowsBatch處理appendToFile的方法/">Windows batch 中處理 append file 的方法 &raquo;</a>
+        
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+
+    <script type="text/javascript">
+        var disqus_config = function () {
+            this.page.url = "http://lisp.rocks/posts-output/2017-12-30-C++API設計閱讀筆記/";
+            this.page.identifier = "〈C++API設計〉閱讀筆記";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//fatfingererr.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    
+</div>
+
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+        <footer>Copyright &copy;  fatfingererr
+            <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a> / Design by <a href="http://lambdafunk.com">Lambda Funk</a></p>
+        </footer>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+</body>
+
+</html>
