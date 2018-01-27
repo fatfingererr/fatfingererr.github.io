@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>(print &quot;Lisp Rocks&quot;): 〈為你自己學Git〉閱讀筆記</title>
+    <link rel="canonical" href="http://lisp.rocks/posts-output/2018-01-17-〈為你自己學Git〉閱讀筆記/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/github.min.css">
+    <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> 
+    <link href="/css/screen.css" rel="stylesheet" type="text/css" />
+    <script>
+    window.klipse_settings = {
+        selector: '.language-klipse' // css selector for the html elements you want to klipsify
+    };
+    </script>
+    <script src="/js/highlight.pack.js" type="text/javascript"></script>
+    <script>
+    hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-title" href="/">(print &quot;Lisp Rocks&quot;)</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" style="position: absolute; right: 0;">
+            <ul class="nav navbar-nav">
+                <li ><a href="/">Home</a></li>
+                <li ><a href="/archives/">Archives</a></li>
+                
+                <li >
+                    <a href="/pages-output/about/">About</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+        <!--/.container-fluid -->
+    </nav>
+    <div>
+        <div>
+            <div>
+                <div id="content">
+                    
+<div id="post">
+    <div class="post-header">
+    <div id="post-meta" class="row">
+        
+    </div>
+    <h2>〈為你自己學Git〉閱讀筆記</h2>
+        <div id="post-date">
+            January 17, 2018
+        </div>
+</div>
+<div>
+    
+    <h1><a name=""></a></h1><h2><a name=""></a></h2><p>對於 Git 還是始終不太熟悉，於是在朋友推薦下入手了這本書</p><p>原本想買另一本歐若禮更複雜更難那本，但先看完這本再說吧！</p><p>底下簡單留下自己的閱讀筆記，大部分應該都是網路找的到的指令</p><p><br></p><h2><a name="使用者設定"></a>使用者設定</h2><pre><code># 設定
+git config --global user.name &quot;name&quot;
+git config --global user.email &quot;email@mail.com&quot;
+# 檢視
+git config --list
+# local 不同作者
+git config --local user.name &quot;foo&quot;
+git config --local user.email &quot;bar@foo.com&quot;</code></pre><p>local 設定可以針對工作上切換成工作 Email ，在 global 方面就是 GitHub 帳戶</p><p><br></p><h2><a name="自訂縮寫"></a>自訂縮寫</h2><pre><code>git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.st status</code></pre><p>也可以對附加參數做縮寫</p><pre><code>git config --global alias.l &quot;log --oneline --graph&quot;
+git l # 等同 git log --oneline --graph 意思
+# 也可以把 commit msg 包含進來
+git config --global alias.ls 'log --graph --pretty=format:&quot;%h &lt;%an&gt; %ar %s&quot;'</code></pre><p>也可以直接在 <code>&#126;/.gitconfig</code> 修改</p><pre><code>&#91;alias&#93;
+  co = checkout
+  br = branch
+  st = status
+  l = log --oneline --graph
+  ls log --graph --pretty=format=&quot;%h &lt;%an&gt; %ar %s&quot;</code></pre><p><br></p><h2><a name="commit"></a>commit</h2><p>懶惰單行 add + commit : <code>git commit -a -m &quot;update content&quot;</code></p><p><br></p><h2><a name="查看&#95;log"></a>查看 log</h2><p>只找某人的 log</p><pre><code>git log --oneline --author=&quot;somebody&quot;
+# 查找兩人
+git log --oneline --author=&quot;someone/|anotherone&quot;</code></pre><p>用正則表達式搜尋</p><pre><code>git log --oneline --grep &quot;wtf&quot;</code></pre><p>搜尋哪些 commit 有用到這個字</p><pre><code>git log -S &quot;someword&quot;</code></pre><p>查找時間</p><pre><code>git log --oneline --since=&quot;9am&quot; --until=&quot;12am&quot;
+# 從特定日期起的指定時間
+git log --oneline --since=&quot;9am&quot; --until=&quot;12am&quot; --after=&quot;2017-01&quot;</code></pre><p><br></p><h2><a name="修改&#95;commit&#95;紀錄"></a>修改 commit 紀錄</h2><p>修改最後一次的 commit message</p><pre><code>git commit --amend -m &quot;new message&quot;</code></pre><p>追加檔案到最新一次的 commit 中</p><pre><code>git add 某個檔案
+git commit --amend --no-edit</code></pre><p>對於空目錄可以放 palceholder 檔名可以叫做 <code>.gitkeep</code> 或 <code>.keep</code></p><p><br></p><h2><a name="gitignore"></a>gitignore</h2><p>清除忽略的檔案，假如忽略的檔案是一些記錄或暫存檔案</p><p>使用指令 <code>git clean -fX</code></p><p><br></p><h2><a name="git&#95;log"></a>git log</h2><p>看特定檔案的 commit 紀錄 <code>git log XXXXX.html</code></p><p>看檔案每一行是什麼時候被改的，抓兇手用的 <code>git blame XXXX.html</code></p><p><br></p><h2><a name="檔案刪除"></a>檔案刪除</h2><p>如果有檔案被刪除想找回來，可以使用 <code>checkout</code> : <code>git checkout 被刪除檔案</code></p><p>如果想把所有刪除檔案找回來，可以使用 <code>git checkout .</code></p><p>如果要拿兩個版本之前的，可以使用 <code>git checkout HEAD&#126;2 某個檔案</code> 來使用</p><p><br></p><h2><a name="commit&#95;後悔"></a>commit 後悔</h2><p>使用</p><pre><code>git reset master&#94;
+git reset HEAD&#94;</code></pre><p>回到前一次 commit ，一個 <code>&#94;</code> 就代表往回一次，N 次可用 <code>&#126;N</code> 的方法</p><p><br></p><h2><a name="參考資料"></a>參考資料</h2><ol><li><a href='https://kaochenlong.com/2017/09/19/learn-git-for-your-own-good/'>為你自己學 Git - 高見龍</a></li></ol>
+</div>
+
+<div id="post-tags">
+    <b>Tags: </b>
+    
+    <a href="/tags-output/reading/">reading</a>
+    
+    <a href="/tags-output/git/">git</a>
+    
+</div>
+
+
+    <div id="prev-next">
+        
+        <a href="/posts-output/2018-01-19-Windows中使用Rapid-Environment-Editor備份環境變數/">&laquo; 使用 Rapid Environment Editor 備份環境變數</a>
+        
+        
+        <a class="right" href="/posts-output/2018-01-17-Spacemacs快速查找layer的定義並修改/">Spacemacs快速查找layer的定義並修改 &raquo;</a>
+        
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+
+    <script type="text/javascript">
+        var disqus_config = function () {
+            this.page.url = "http://lisp.rocks/posts-output/2018-01-17-〈為你自己學Git〉閱讀筆記/";
+            this.page.identifier = "〈為你自己學Git〉閱讀筆記";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//fatfingererr.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    
+</div>
+
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+        <footer>Copyright &copy;  fatfingererr
+            <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a> / Design by <a href="http://lambdafunk.com">Lambda Funk</a></p>
+        </footer>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+</body>
+
+</html>
