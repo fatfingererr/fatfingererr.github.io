@@ -1,0 +1,665 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+<channel>
+<atom:link href='http://lisp.rocks/' rel='self' type='application/rss+xml'/>
+<title>
+(print &quot;Lisp Rocks&quot;)
+</title>
+<link>
+http://lisp.rocks/
+</link>
+<description>
+Lisp Rocks
+</description>
+<lastBuildDate>
+Sat, 27 Jan 2018 17:36:39 +0800
+</lastBuildDate>
+<generator>
+clj-rss
+</generator>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-27-Producing-Open-Source-Software-閱讀筆記/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-27-Producing-Open-Source-Software-閱讀筆記/
+</link>
+<title>
+〈 Producing Open Source Software 〉閱讀筆記 1
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;因為想了解 Open Source 的一些經營和法律問題，所以找了這本書來讀。&lt;/p&gt;&lt;p&gt;針對裡面的一些重點作筆記，主要還是會偏向對開源專案的看法，一般性的討論就比較少。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;怎樣判斷一個專案的失敗？&quot;&gt;&lt;/a&gt;怎樣判斷一個專案的失敗？&lt;/h2&gt;&lt;p&gt;本書作者首先從如何判斷開源專案破題：&lt;/p&gt;&lt;p&gt;我們一般都不會聽到 Open Source 失敗，大部分就是維護者離開而停止維護&lt;/p&gt;&lt;p&gt;而這個離開是漸漸地，甚至是以另開一個新項目的方式結束，&lt;/p&gt;&lt;p&gt;又或是可以用專案使用的人漸漸變少來判斷呢？這些都顯示判斷一個專案結束很困難&lt;/p&gt;&lt;p&gt;而作者在本書中，想嘗試的就是告知讀者如何「避免專案失敗」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;最常見錯誤：過高的期待&quot;&gt;&lt;/a&gt;最常見錯誤：過高的期待&lt;/h2&gt;&lt;p&gt;作者提到最常見對開源專案的誤解，就是抱有不切實際的期待&lt;/p&gt;&lt;p&gt;所以專案負責人可能不會投入過多的時間在介紹專案和包裝，把這些視為次要的&lt;/p&gt;&lt;p&gt;然而對於不熟悉的人，這些都很重要，但工程師也無可厚非，他們擅長他們擅長的事情&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;專案管理幾乎不太必要&quot;&gt;&lt;/a&gt;專案管理幾乎不太必要&lt;/h2&gt;&lt;p&gt;在一個成功的開源專案中，很多討論和決定都是在檯面下進行&lt;/p&gt;&lt;p&gt;因為專案的組成成員是隨機而來，大家又幾乎沒有見過面，所以很難思考這個情況下會發生什麼事情&lt;/p&gt;&lt;p&gt;專案管理人們可能會相對活躍，但也是以低調和非正式的方式進行&lt;/p&gt;&lt;p&gt;因此多數管理的目標主要就是確定彼此有共同的看法，並設定溝通的規範&lt;/p&gt;&lt;p&gt;確保不會有人被排擠，並且可以讓專案成為貢獻者經常回來的地方&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;失敗的文化建設&quot;&gt;&lt;/a&gt;失敗的文化建設&lt;/h2&gt;&lt;p&gt;大多數好的專案都會顯示出來他們獎勵、或是懲罰什麼樣的行為&lt;/p&gt;&lt;p&gt;通常專案會鼓勵不再規劃中的事件發生，儘管需要犧牲一些協調溝通的代價&lt;/p&gt;&lt;p&gt;而長期參與者會內化一個標準，使其成為一個貢獻者們共通的大致共識&lt;/p&gt;&lt;p&gt;而不成功的專案通常就是偏離了這個核心文化&lt;/p&gt;&lt;p&gt;使得專案遇到問題時，會突然迅速造成結果惡化，因為貢獻者們沒有對問題有共通的共識來解決分歧&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;開源是選擇性文化&quot;&gt;&lt;/a&gt;開源是選擇性文化&lt;/h2&gt;&lt;p&gt;所有人會參與到一個專案中，是因為他們選擇參與，如果他們不喜歡就會離開&lt;/p&gt;&lt;p&gt;只要他們喜歡就會付出一些時間，但要形成一個具有凝聚力和專注的團隊需要很長時間&lt;/p&gt;&lt;p&gt;同時要失去一個潛在有興趣的人，是很容易的一件事情，例如差勁的第一印象，別人就不會給予第二次機會&lt;/p&gt;&lt;p&gt;要維持這樣的聯繫很不容易，本書給予了一個很好的評量標準：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;「參與者必須感受到他們與開源專案的聯繫，以及對專案的影響和他們的貢獻是成正比。」&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;選擇的技術框架、宣傳模式以及開發語言，都會影響到這一切&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;兩類不同的專案訪問對象：使用者和開發人員&quot;&gt;&lt;/a&gt;兩類不同的專案訪問對象：使用者和開發人員&lt;/h2&gt;&lt;p&gt;有必須要思考哪些是使用者和開發人員共同都需要知道的，而那些要分開來&lt;/p&gt;&lt;p&gt;使用者文件和開發文件是否提供對應合適的訊息&lt;/p&gt;&lt;p&gt;如何讓用戶和開發人員放心？願意提出問題，甚至參與到專案中&lt;/p&gt;&lt;p&gt;關鍵就是要讓使用者和開發人員都要感受到：&lt;/p&gt;&lt;p&gt;&lt;strong&gt;「如果你插手這個專案，你不會浪費你的時間。」&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;是否重新發明了輪子&quot;&gt;&lt;/a&gt;是否重新發明了輪子&lt;/h2&gt;&lt;p&gt;首先應該到各大開源專案平台搜尋，是否有和你類似的專案已經出現&lt;/p&gt;&lt;p&gt;如果有你還是想做，為了累積更多經驗的話也是無訪&lt;/p&gt;&lt;p&gt;甚至說你想對該現有專案做更深入的專業化，而別人可能做不到&lt;/p&gt;&lt;p&gt;通常這些想法都可以接受，但是你可能會發現加入這些項目比從頭開始更好&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;專案的最低激發能量：讓新人擺脫初始的陌生障礙&quot;&gt;&lt;/a&gt;專案的最低激發能量：讓新人擺脫初始的陌生障礙&lt;/h2&gt;&lt;p&gt;一個專案的開始，很重要就是要讓新人能快速擺脫不熟悉且陌生的初始狀況&lt;/p&gt;&lt;p&gt;這是一個專案最低的基本門檻，有人把這個門檻稱作「hacktivation energy」&lt;/p&gt;&lt;p&gt;也就是新人能在回頭來到你專案之前，他被鼓勵到能參與多深的水平&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;參考資料&quot;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;&lt;a href='https://www.amazon.com/Producing-Open-Source-Software-Successful/dp/0596007590'&gt;Producing Open Source Software: How to Run a Successful Free Software Project | Amazon.com Books&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Sat, 27 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-25-Emacs-中使用-gnus-的基本快捷鍵/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-25-Emacs-中使用-gnus-的基本快捷鍵/
+</link>
+<title>
+Emacs 中使用 gnus 的基本快捷鍵
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;最近使用 gnus 管理 Email 但是都搞不太懂他的快捷鍵&lt;/p&gt;&lt;p&gt;網路找了一些資料，整理自己常用的快捷鍵按鈕&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;code&gt;Z C&lt;/code&gt; 標記所有文章為已讀&lt;/li&gt;&lt;li&gt;&lt;code&gt;r&lt;/code&gt; 回信， &lt;code&gt;R&lt;/code&gt; 帶原文的回信&lt;/li&gt;&lt;li&gt;&lt;code&gt;L&lt;/code&gt; 顯示 0 郵件的分類 &lt;code&gt;l&lt;/code&gt; 只顯示有未讀的群組&lt;/li&gt;&lt;li&gt;&lt;code&gt;g&lt;/code&gt; 重新整理並取得最新郵件&lt;/li&gt;&lt;li&gt;&lt;code&gt;m&lt;/code&gt; 寫信 &lt;code&gt;C-c C-c&lt;/code&gt; 寄出 &lt;code&gt;C-x s&lt;/code&gt; 保存草稿 &lt;code&gt;C-c C-d&lt;/code&gt; 退出 &lt;code&gt;C-c C-k&lt;/code&gt; 強制退出&lt;/li&gt;&lt;li&gt;&lt;code&gt;C-c C-a&lt;/code&gt; 添加附件&lt;/li&gt;&lt;li&gt;&lt;code&gt;o / C-o&lt;/code&gt; 在郵件中保存附件&lt;/li&gt;&lt;li&gt;&lt;code&gt;B DEL&lt;/code&gt; 刪除郵件&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;在 gnus 中對已讀和未讀的信有一些標記&lt;/p&gt;&lt;p&gt;例如已讀的信會有 &lt;code&gt;R, r, O, E&lt;/code&gt;&lt;/p&gt;&lt;p&gt;而未讀的信會有 &lt;code&gt;!, ?, &amp;#42;&lt;/code&gt; 的標記&lt;/p&gt;&lt;p&gt;其中&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;R&lt;/code&gt; 表示這次閱讀過了&lt;/li&gt;&lt;li&gt;&lt;code&gt;r&lt;/code&gt; 表示是手動 &lt;code&gt;d&lt;/code&gt; 打上已讀標籤的文章&lt;/li&gt;&lt;li&gt;&lt;code&gt;O&lt;/code&gt; 上次已經閱讀過了，默認不會出現除非使用 &lt;code&gt;/ o&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;!&lt;/code&gt; ticked 保留標記，保留可見，想持續追蹤&lt;/li&gt;&lt;li&gt;&lt;code&gt;?&lt;/code&gt; dormant 休眠標記，除非有人回應否則不會看到這個&lt;/li&gt;&lt;li&gt;&lt;code&gt;&amp;lt;space&amp;gt;&lt;/code&gt; 空格標記及表示仍然是未讀文章&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&amp;#42;&amp;#42;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;參考資料&quot;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;&lt;a href='http://www.junzilou.com/blog/emacs_gnus_shortcuts.html'&gt; emacs的gnus的一些快捷键 | 君子楼&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='https://www.ibm.com/developerworks/cn/linux/l-cn-emacsgnus/index.html'&gt;Emacs Gnus 的基本配置与使用&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Thu, 25 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-24-Emacs-中使用-wakatime-追蹤開發時間/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-24-Emacs-中使用-wakatime-追蹤開發時間/
+</link>
+<title>
+Emacs 中使用 wakatime 追蹤開發時間
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;最近在使用 elfeed 的功能，就順道看了 Spacemacs 的其他 Web Services layer&lt;/p&gt;&lt;p&gt;然後想說慢慢來用看看，今天先嘗試的是 wakatime&lt;/p&gt;&lt;p&gt;簡單的介紹可以參考 &lt;a href='http://www.iamlj.com/2016/07/recommend-tools-wakatime/'&gt; WakaTime - 编程时间管理工具 顺便秀秀编程时间 | Jing’s Blog &lt;/a&gt;&lt;/p&gt;&lt;p&gt;在 windows 上面安裝需要留意一些事情&lt;/p&gt;&lt;p&gt;首先是要用 &lt;code&gt;Run as Administer&lt;/code&gt; 開啟 cmd&lt;/p&gt;&lt;p&gt;然後安裝&lt;/p&gt;&lt;pre&gt;&lt;code&gt;pip install wakatime&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;接下來使用 Spacemacs 的說明中提到的設定&lt;/p&gt;&lt;pre&gt;&lt;code&gt;;; 在 dotspacemacs-configuration-layers 中新增
+&amp;#40;wakatime :variables
+                wakatime-api-key  &amp;quot;&amp;lt;註冊完帳號就會有API-KEY&amp;gt;&amp;quot;
+                ;; use the actual wakatime path
+                wakatime-cli-path &amp;quot;&amp;lt;可不填,只要python套件在環境變數中&amp;gt;&amp;quot;&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;這邊的 API-KEY 在註冊完畢 wakatime 就會得到，需要驗證 email&lt;/p&gt;&lt;p&gt;而 Path 的話則是不用輸入，因為在 Windows 上面處理 path 會很麻煩，有斜線問題&lt;/p&gt;&lt;p&gt;如果你的 python 安裝路徑本身就在環境路徑下，那就不用添加 path&lt;/p&gt;&lt;p&gt;如果你 wakatime 沒執行成功，他會在 Emacs 的 &lt;code&gt;&amp;#42;messages&amp;#42;&lt;/code&gt; buffer 告訴你他想執行的指令&lt;/p&gt;&lt;p&gt;像我剛改完畢 Spacemacs 設定，馬上就更新到 wakatime 網站了&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;../../img/waaktime-try.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;參考資料&quot;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;&lt;a href='http://www.iamlj.com/2016/07/recommend-tools-wakatime/'&gt; WakaTime - 编程时间管理工具 顺便秀秀编程时间 | Jing’s Blog &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bweb-services/wakatime'&gt;spacemacs/layers/+web-services/wakatime at master · syl20bnr/spacemacs · GitHub&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Wed, 24 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-21-Emacs-中使用-elfeed-閱讀-RSS/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-21-Emacs-中使用-elfeed-閱讀-RSS/
+</link>
+<title>
+Emacs 中使用 elfeed 閱讀 RSS
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;一直想從 feedly 搬到 Emacs 中，趁著有空來研究 elfeed&lt;/p&gt;&lt;p&gt;基本上在 Spacemacs 中預設就有 elfeed 以及用 org 管理 rss list 的 elfeed-org&lt;/p&gt;&lt;p&gt;我使用的方法是用 eval-after-load&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;eval-after-load 'elfeed
+  &amp;#40;lambda &amp;#40;&amp;#41;
+    &amp;#40;elfeed-org&amp;#41;
+    &amp;#40;setq rmh-elfeed-org-files &amp;#40;list &amp;quot;&amp;#126;/.spacemacs.d/rss/elfeed.org&amp;quot;&amp;#41;&amp;#41;&amp;#41;&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然後在你的 org 檔案裡面就可以依序放入 RSS list&lt;/p&gt;&lt;p&gt;例如（請把 &lt;code&gt;#&lt;/code&gt; 換成 &lt;code&gt;&amp;#42;&lt;/code&gt; ）&lt;/p&gt;&lt;pre&gt;&lt;code&gt;# Emacs                                                              :elfeed:
+## http://ergoemacs.org/emacs/blog.xml
+## http://planet.emacsen.org/atom.xml
+## http://nullprogram.com/feed&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;這邊要特別留意的是，第一個開頭一定要是 &lt;code&gt;&amp;#42; 某開頭          :elfeed:&lt;/code&gt; 這樣&lt;/p&gt;&lt;p&gt;這樣 elfeed 才會認知到你的 feed ，如果你在額外弄一個一級標題但沒有 &lt;code&gt;elfeed&lt;/code&gt; 的 tag&lt;/p&gt;&lt;p&gt;就不會被當作是 elfeed 的 feed ，記得使用 &lt;code&gt;C-c C-q&lt;/code&gt; 打上 tags&lt;/p&gt;&lt;p&gt;此外，如果不知道自己有沒有新增成功，可以透過指令 &lt;code&gt;elfeed-org-export-opml&lt;/code&gt; 來看&lt;/p&gt;&lt;p&gt;如果裡面沒有新增的 RSS，就代表你 org file 沒弄好&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;參考資料&quot;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;&lt;a href='https://github.com/remyhonig/elfeed:'&gt;remyhonig/elfeed - An Emacs web feeds client&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='https://github.com/remyhonig/elfeed-org'&gt;remyhonig/elfeed-org - Configure the Elfeed RSS reader with an Orgmode file&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Sun, 21 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-20-Wittgensteins-Remarks-on-the-Foundations-of-AI-第二章閱讀筆記/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-20-Wittgensteins-Remarks-on-the-Foundations-of-AI-第二章閱讀筆記/
+</link>
+<title>
+Wittgenstein's Remarks on the Foundations of AI 第二章閱讀筆記
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;最近參與了本書 &lt;a href='https://www.amazon.com/Wittgensteins-Remarks-Foundations-Stuart-Shanker/dp/0415408571'&gt;Wittgenstein's Remarks on the Foundations of AI&lt;/a&gt; 的哲學讀書會&lt;/p&gt;&lt;p&gt;所以想說把一些筆記重點紀錄下來，在第二章大量討論人工智慧與規範性之間的關係&lt;/p&gt;&lt;p&gt;不理解規範性是什麼的話，本文很有可能看不懂，請留意&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;拆解「學習」這個概念&quot;&gt;&lt;/a&gt;拆解「學習」這個概念&lt;/h2&gt;&lt;p&gt;圖靈認為更高層次的學習概念，也可以拆解成更簡單的一些小概念連貫起來&lt;/p&gt;&lt;p&gt;這邊談的概念（ concept ）其實是一種「刺激」與「反映」的聯繫關係&lt;/p&gt;&lt;p&gt;因為對於普通人來說，我們講 &lt;strong&gt;X 具有 Y 概念&lt;/strong&gt; 其實往往是意味著 X 能做出某件關於 Y 概念的事情&lt;/p&gt;&lt;p&gt;也因此對於概念的掌握，其實是一種將概念視同一連串的等價反應（ equivaience response ）&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;舉例來說，一個主體 S 如果能適當地回應 Φ 如何使用，並且掌握 Φ 的規則以及解釋 Φ 是什麼&lt;/p&gt;&lt;p&gt;那這樣我們會說主體 S 學習了關於 Φ 的概念&lt;/p&gt;&lt;p&gt;然而對於人工智慧系統來說，在回應、掌握和解釋上面，可能受到嚴重的限制&lt;/p&gt;&lt;p&gt;因此對於人工智慧來說，我們不應該說這樣的系統學習了什麼概念，而是要換一個講法&lt;/p&gt;&lt;p&gt;我們與其說人工智慧「學習了 X」，我們可能可以說他「有條件做 X」&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;然而圖靈可能會認為，我們在思維上也很難區分這兩者，所以在行為上也很難分辨「學習了」和「有條件」的關係&lt;/p&gt;&lt;p&gt;真的很難區分嗎？實際上「有條件做」和「學習」之間有個因果關係程度上的差異&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;舉例來說，我們不一定要用因果關係的規範性術語，像是「有條件」這樣來描述學習&lt;/p&gt;&lt;p&gt;像是你學習說話，你很難說你從什麼時間點確切開始學習，觸發什麼條件才學習，然後到什麼時間點結束&lt;/p&gt;&lt;p&gt;但是掌握說話的相關概念是很重要的，也就是掌握說話的因果關係，在什麼樣前提條件下說什麼話&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;實踐的規範性：上升的複雜性&quot;&gt;&lt;/a&gt;實踐的規範性：上升的複雜性&lt;/h2&gt;&lt;p&gt;我們可以看到一個真正的「學習」案例，例如我們因為在學加法，學習了 1+1 = 2&lt;/p&gt;&lt;p&gt;然而這學習過程，會遮蔽掉我們去思考加法（+）的意思，這是因為我們要區分「加法」和「做加法」的差異&lt;/p&gt;&lt;p&gt;這種情況會造成「上升的複雜性」，在學習過程中為了區分，需要使用抽象概念暫時代替&lt;/p&gt;&lt;p&gt;也因此我們需要採取各種不同的規範實踐方法&lt;/p&gt;&lt;p&gt;使得我們最後把這個上升的複雜性的異質性降低到一個共同範式，也就是一個功能性的定義&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;然而在圖靈，或是現在的人工智慧系統中，並沒有去掌握這樣的規範性&lt;/p&gt;&lt;p&gt;透過把學習拆解成一連串小部分的連續概念，只會導致破壞「學習」這個概念依賴的規範性基礎&lt;/p&gt;&lt;p&gt;這大概就是 2-3 的重點。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;機器可以學會閱讀嗎？&quot;&gt;&lt;/a&gt;機器可以學會閱讀嗎？&lt;/h2&gt;&lt;p&gt;在 2-4 維根斯坦開始思考底下三者閱讀的差異：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;機械式地閱讀，想成人工智慧系統或機器的閱讀&lt;/li&gt;&lt;li&gt;普通人在不瞭解詞語的情況下閱讀&lt;/li&gt;&lt;li&gt;普通人正常的閱讀&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;維根斯坦指出，我們很難區分 2 和 3 ，例如政治家拿著演講稿照稿念、和小朋友正在開始學習閱讀&lt;/p&gt;&lt;p&gt;維根斯坦好奇的是 1 和 3 之間也有像似 2 和 3 之間的難以區分的情況嗎？&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;這邊比較機器閱讀和正常人閱讀，似乎只差在有沒有一個「意識」的感覺&lt;/p&gt;&lt;p&gt;看起來，機器和正常人都擁有「閱讀」的能力，都可以看著文章，然後機器可以烙印在他的狀態上面&lt;/p&gt;&lt;p&gt;而我們人可以將看到的視覺資訊透過神經系統轉換，然後透過大腦各種奇怪作用達到閱讀行為&lt;/p&gt;&lt;p&gt;看起來之間也有模糊地帶的樣子&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;然而維根斯坦更關心的事情是，在這種問題上面我們常常搞混「擁有（possession）」能力&lt;/p&gt;&lt;p&gt;和「行使（exercise）」能力之間的關係，前面那樣的定義，也緊緊是說明了「行使閱讀能力」層面的說明&lt;/p&gt;&lt;p&gt;但是對「擁有閱讀能力」層面，很明顯機器和人工智慧系統是有差異的&lt;/p&gt;&lt;p&gt;擁有閱讀能力更多的受到規範性影響，包含前面提到的「獲取知識」和「表現出像擁有知識」一樣&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Sat, 20 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-20-Emacs-中使用-popup-tip-彈出自訂內容/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-20-Emacs-中使用-popup-tip-彈出自訂內容/
+</link>
+<title>
+Emacs 中使用 popup-tip 彈出自訂內容
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;../../img/search-in-dict-example.gif&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;&lt;p&gt;由於看到了 &lt;a href='http://blog.jenkster.com/2013/12/popup-help-in-emacs-lisp.html'&gt;Popup Help In Emacs Lisp&lt;/a&gt; 這篇文章，想要來自訂 popup-tip&lt;/p&gt;&lt;p&gt;其實函數十分簡單，文章的方法就夠用了，但我想要從自訂的檔案內容讀取出來&lt;/p&gt;&lt;p&gt;因為檔案可能搜尋不到，所以多了一行 message&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;defun fatfingererr/coding-dict-at-point &amp;#40;&amp;#41;
+  &amp;#40;interactive&amp;#41;
+  &amp;#40;let&amp;#42; &amp;#40;&amp;#40;content &amp;#40;fatfingererr/search-in-dict
+                   &amp;quot;coding&amp;quot; &amp;#40;thing-at-point 'word&amp;#41;&amp;#41;&amp;#41;&amp;#41;
+    &amp;#40;if content
+        &amp;#40;popup-tip content
+                   :point &amp;#40;point&amp;#41;
+                   :around t
+                   :height 30
+                   :scroll-bar t
+                   :margin t&amp;#41;
+      &amp;#40;message &amp;quot;no match result...&amp;quot;&amp;#41;&amp;#41;&amp;#41;&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其中因為我建立了一個字典資料夾，放在 &lt;code&gt;&amp;#126;/.spacemacs.d/dictionary&lt;/code&gt; 中&lt;/p&gt;&lt;p&gt;裡面我弄了一個 &lt;code&gt;coding&lt;/code&gt; 的資料夾，當作 coding 相關的字典檔案夾&lt;/p&gt;&lt;p&gt;也就是我只要目前游標停留在 &lt;code&gt;if&lt;/code&gt; 他就會去找 &lt;code&gt;&amp;#126;/.spacemacs.d/dictionary/coding/if&lt;/code&gt;&lt;/p&gt;&lt;p&gt;然後把檔案內容彈跳出來，例如一個提醒我寫 if 的內容：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;# &amp;#126;/.spacemacs.d/dictionary/coding/if&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;【 if/else 條件語句 】&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;迴圈循環子可考慮寫成 club&amp;#95;i, members&amp;#95;i, users&amp;#95;i
+或是 ci, mi, ui&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;所以我首先得先確定游標內容有沒有對應的檔案在字典資料夾裡面&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;defun fatfingererr/search-in-dict-p &amp;#40;dict-name src&amp;#41;
+  &amp;#40;if src &amp;#40;xah-string-match-in-list-p src
+    &amp;#40;directory-files
+     &amp;#40;expand-file-name dict-name my-dict-path&amp;#41;&amp;#41; nil&amp;#41;
+  nil&amp;#41;
+&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;這邊我使用到 &lt;a href='http://ergoemacs.org/emacs/elisp_string_match_in_list.html'&gt;xah-string-match-in-list-p&lt;/a&gt; 函數，可以到連結裡面直接複製貼上&lt;/p&gt;&lt;p&gt;唯一要留意的就是使用這個函數，第三個參數要記得放，也就是 &lt;code&gt;match-case-p&lt;/code&gt;&lt;/p&gt;&lt;p&gt;接著我們確認完畢檔案存在，就開始把檔案內容讀出來&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;defun fatfingererr/search-in-dict &amp;#40;dict-name src&amp;#41;
+  &amp;#40;if &amp;#40;fatfingererr/search-in-dict-p dict-name src&amp;#41;
+      &amp;#40;with-temp-buffer
+      &amp;#40;insert-file-contents &amp;#40;expand-file-name
+       &amp;#40;fatfingererr/search-in-dict-p dict-name src&amp;#41;
+       &amp;#40;expand-file-name dict-name my-dict-path&amp;#41;&amp;#41;&amp;#41;
+      &amp;#40;buffer-string&amp;#41;&amp;#41;
+    nil&amp;#41;
+  &amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;結果就會是像前面的 GIF 啦！還不錯！&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;參考資料&quot;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;&lt;a href='http://blog.jenkster.com/2013/12/popup-help-in-emacs-lisp.html'&gt;Popup Help In Emacs Lisp&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Sat, 20 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-19-Windows中使用Rapid-Environment-Editor備份環境變數/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-19-Windows中使用Rapid-Environment-Editor備份環境變數/
+</link>
+<title>
+使用 Rapid Environment Editor 備份環境變數
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;之前一直想要備份 Windows 的環境變數，然後找到一個好用的軟體 &lt;a href='https://www.rapidee.com/en/download'&gt;Rapid Environment Editor&lt;/a&gt;&lt;/p&gt;&lt;p&gt;這個軟體能備份和幫忙檢查有哪些環境變數是無效的&lt;/p&gt;&lt;p&gt;無效的環境變數會以紅色顯示，其中語言也有簡體中文版本，對 Windows 不熟也可以使用&lt;/p&gt;&lt;p&gt;所有變更只有在儲存之後才會真的變更，也不用擔心亂改改錯&lt;/p&gt;&lt;p&gt;備份的部分存成 &lt;code&gt;.reg&lt;/code&gt; 檔案，可以再把它讀取回來&lt;/p&gt;&lt;p&gt;內容就像是&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;pre&gt;&lt;code&gt;; System variables
+...
+&amp;#91;HKEY&amp;#95;LOCAL&amp;#95;MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment&amp;#93;
+&amp;quot;CCP&amp;#95;JOBTEMPLATE&amp;quot;=&amp;quot;Default&amp;quot;
+&amp;quot;CCP&amp;#95;LOGROOT&amp;#95;USR&amp;quot;=hex&amp;#40;2&amp;#41;:25,4C,4F,43,41,4C,41,50,50,44,41,54,41,25,5C,4D,69,63,72,6F,73,6F,66,74,5C,48,70,63,5C,4C,6F,67,46,69,6C,65,73,5C,00
+&amp;quot;ChocolateyInstall&amp;quot;=&amp;quot;C:\\ProgramData\\chocolatey&amp;quot;
+&amp;quot;ComSpec&amp;quot;=hex&amp;#40;2&amp;#41;:25,53,79,73,74,65,6D,52,6F,6F,74,25,5C,73,79,73,74,65,6D,33,32,5C,63,6D,64,2E,65,78,65,00
+&amp;quot;CUDA&amp;#95;PATH&amp;quot;=&amp;quot;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v8.0&amp;quot;
+&amp;quot;CUDA&amp;#95;PATH&amp;#95;V8&amp;#95;0&amp;quot;=&amp;quot;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v8.0&amp;quot;
+&amp;quot;DokanLibrary1&amp;quot;=&amp;quot;C:\\Program Files\\Dokan\\Dokan Library-1.0.0\\&amp;quot;
+&amp;quot;GNUPLOT&amp;#95;LIB&amp;quot;=&amp;quot;C:\\Program Files\\gnuplot\\demo;C:\\Program Files\\gnuplot\\demo\\games;C:\\Program Files\\gnuplot\\share&amp;quot;
+&amp;quot;GNUTERM&amp;quot;=&amp;quot;windows&amp;quot;
+...&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其中蠻有趣的是部分會用 &lt;code&gt;hex&lt;/code&gt; 來表示，不知道那是什麼意思&amp;#x2026;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;參考資料&quot;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;&lt;a href='http://nelson.pixnet.net/blog/post/22360384-%5B%E5%88%86%E4%BA%AB%5D-rapid-environment-editor&amp;mdash;%E6%96%B9%E4%BE%BF%E4%BF%AE%E6%94%B9%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8'&gt;{分享} Rapid Environment Editor - 方便修改環境變數的工具&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='https://dotblogs.com.tw/echo/2017/07/13/windows_tool_rapidenvironmenteditor'&gt;【Windows】環境變數管理工具：Rapid Environment Editor&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Fri, 19 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-17-〈為你自己學Git〉閱讀筆記/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-17-〈為你自己學Git〉閱讀筆記/
+</link>
+<title>
+〈為你自己學Git〉閱讀筆記
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;對於 Git 還是始終不太熟悉，於是在朋友推薦下入手了這本書&lt;/p&gt;&lt;p&gt;原本想買另一本歐若禮更複雜更難那本，但先看完這本再說吧！&lt;/p&gt;&lt;p&gt;底下簡單留下自己的閱讀筆記，大部分應該都是網路找的到的指令&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;使用者設定&quot;&gt;&lt;/a&gt;使用者設定&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;# 設定
+git config --global user.name &amp;quot;name&amp;quot;
+git config --global user.email &amp;quot;email@mail.com&amp;quot;
+# 檢視
+git config --list
+# local 不同作者
+git config --local user.name &amp;quot;foo&amp;quot;
+git config --local user.email &amp;quot;bar@foo.com&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;local 設定可以針對工作上切換成工作 Email ，在 global 方面就是 GitHub 帳戶&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;自訂縮寫&quot;&gt;&lt;/a&gt;自訂縮寫&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.st status&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;也可以對附加參數做縮寫&lt;/p&gt;&lt;pre&gt;&lt;code&gt;git config --global alias.l &amp;quot;log --oneline --graph&amp;quot;
+git l # 等同 git log --oneline --graph 意思
+# 也可以把 commit msg 包含進來
+git config --global alias.ls 'log --graph --pretty=format:&amp;quot;%h &amp;lt;%an&amp;gt; %ar %s&amp;quot;'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;也可以直接在 &lt;code&gt;&amp;#126;/.gitconfig&lt;/code&gt; 修改&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#91;alias&amp;#93;
+  co = checkout
+  br = branch
+  st = status
+  l = log --oneline --graph
+  ls log --graph --pretty=format=&amp;quot;%h &amp;lt;%an&amp;gt; %ar %s&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;commit&quot;&gt;&lt;/a&gt;commit&lt;/h2&gt;&lt;p&gt;懶惰單行 add + commit : &lt;code&gt;git commit -a -m &amp;quot;update content&amp;quot;&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;查看&amp;#95;log&quot;&gt;&lt;/a&gt;查看 log&lt;/h2&gt;&lt;p&gt;只找某人的 log&lt;/p&gt;&lt;pre&gt;&lt;code&gt;git log --oneline --author=&amp;quot;somebody&amp;quot;
+# 查找兩人
+git log --oneline --author=&amp;quot;someone/|anotherone&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;用正則表達式搜尋&lt;/p&gt;&lt;pre&gt;&lt;code&gt;git log --oneline --grep &amp;quot;wtf&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;搜尋哪些 commit 有用到這個字&lt;/p&gt;&lt;pre&gt;&lt;code&gt;git log -S &amp;quot;someword&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;查找時間&lt;/p&gt;&lt;pre&gt;&lt;code&gt;git log --oneline --since=&amp;quot;9am&amp;quot; --until=&amp;quot;12am&amp;quot;
+# 從特定日期起的指定時間
+git log --oneline --since=&amp;quot;9am&amp;quot; --until=&amp;quot;12am&amp;quot; --after=&amp;quot;2017-01&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;修改&amp;#95;commit&amp;#95;紀錄&quot;&gt;&lt;/a&gt;修改 commit 紀錄&lt;/h2&gt;&lt;p&gt;修改最後一次的 commit message&lt;/p&gt;&lt;pre&gt;&lt;code&gt;git commit --amend -m &amp;quot;new message&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;追加檔案到最新一次的 commit 中&lt;/p&gt;&lt;pre&gt;&lt;code&gt;git add 某個檔案
+git commit --amend --no-edit&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;對於空目錄可以放 palceholder 檔名可以叫做 &lt;code&gt;.gitkeep&lt;/code&gt; 或 &lt;code&gt;.keep&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;gitignore&quot;&gt;&lt;/a&gt;gitignore&lt;/h2&gt;&lt;p&gt;清除忽略的檔案，假如忽略的檔案是一些記錄或暫存檔案&lt;/p&gt;&lt;p&gt;使用指令 &lt;code&gt;git clean -fX&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;git&amp;#95;log&quot;&gt;&lt;/a&gt;git log&lt;/h2&gt;&lt;p&gt;看特定檔案的 commit 紀錄 &lt;code&gt;git log XXXXX.html&lt;/code&gt;&lt;/p&gt;&lt;p&gt;看檔案每一行是什麼時候被改的，抓兇手用的 &lt;code&gt;git blame XXXX.html&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;檔案刪除&quot;&gt;&lt;/a&gt;檔案刪除&lt;/h2&gt;&lt;p&gt;如果有檔案被刪除想找回來，可以使用 &lt;code&gt;checkout&lt;/code&gt; : &lt;code&gt;git checkout 被刪除檔案&lt;/code&gt;&lt;/p&gt;&lt;p&gt;如果想把所有刪除檔案找回來，可以使用 &lt;code&gt;git checkout .&lt;/code&gt;&lt;/p&gt;&lt;p&gt;如果要拿兩個版本之前的，可以使用 &lt;code&gt;git checkout HEAD&amp;#126;2 某個檔案&lt;/code&gt; 來使用&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;commit&amp;#95;後悔&quot;&gt;&lt;/a&gt;commit 後悔&lt;/h2&gt;&lt;p&gt;使用&lt;/p&gt;&lt;pre&gt;&lt;code&gt;git reset master&amp;#94;
+git reset HEAD&amp;#94;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;回到前一次 commit ，一個 &lt;code&gt;&amp;#94;&lt;/code&gt; 就代表往回一次，N 次可用 &lt;code&gt;&amp;#126;N&lt;/code&gt; 的方法&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;參考資料&quot;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;&lt;a href='https://kaochenlong.com/2017/09/19/learn-git-for-your-own-good/'&gt;為你自己學 Git - 高見龍&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Wed, 17 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-17-Spacemacs快速查找layer的定義並修改/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-17-Spacemacs快速查找layer的定義並修改/
+</link>
+<title>
+Spacemacs快速查找layer的定義並修改
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;為了解決 &lt;a href='https://emacs-china.org/t/topic/4353'&gt;Symbol’s function definition is void: org-projectile:per-repo&lt;/a&gt; 的問題&lt;/p&gt;&lt;p&gt;需要去到 &lt;code&gt;org-projectile&lt;/code&gt; 中修改套件的定義，使用到一個少用的功能，特此留作紀錄&lt;/p&gt;&lt;p&gt;也就是 key &lt;code&gt;M-m h SPC&lt;/code&gt; 可以快速查找目前載入的套件的 el 檔案&lt;/p&gt;&lt;p&gt;在本 bug 中需要到 &lt;code&gt;org-projectile&lt;/code&gt; 把 &lt;code&gt;&amp;#40;org-projectile&amp;#41;&lt;/code&gt; 註釋掉&lt;/p&gt;&lt;p&gt;進入檔案中透過 &lt;code&gt;C-s&lt;/code&gt; 搜尋修改即可&lt;/p&gt;&lt;p&gt;這樣就可以繼續使用 &lt;code&gt;org-capture &amp;#40;C-c c&amp;#41;&lt;/code&gt; 了!&lt;/p&gt;&lt;p&gt;此 bug 似乎是 &lt;code&gt;org-projectile&lt;/code&gt; 的問題，暫且不深究了&amp;#x2026;&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Wed, 17 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-16-Emacs中使用eval-after-load避免使用尚未載入套件的函數/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-16-Emacs中使用eval-after-load避免使用尚未載入套件的函數/
+</link>
+<title>
+Emacs中使用eval-after-load避免使用尚未載入套件的函數
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;今天因為要處理這個問題：&lt;/p&gt;&lt;p&gt;&lt;a href='https://github.com/syl20bnr/spacemacs/issues/9374'&gt;Symbol's function definition is void: org-projectile-per-project #9374&lt;/a&gt;&lt;/p&gt;&lt;p&gt;結果把 org-projectile 砍掉重新安裝&lt;/p&gt;&lt;p&gt;安裝的時候發現因為我定義的函數，有使用到 &lt;code&gt;projectile-project-root&lt;/code&gt; 但是套件又被我砍掉&lt;/p&gt;&lt;p&gt;結果就是安裝完套件我還是初始化失敗，因為我的 layer 使用到為定義的函數&lt;/p&gt;&lt;p&gt;因此安全起見，應該要把自訂函數有使用到套件功能的部分，在套件讀取後再定義&lt;/p&gt;&lt;p&gt;也就是要使用 &lt;code&gt;eval-after-load&lt;/code&gt; 的功能&lt;/p&gt;&lt;p&gt;使用方法如下，例如：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;eval-after-load 'org-projectile ;; 在讀取 org-projectile 後執行
+  &amp;#40;progn
+    ....
+    ....
+    &amp;#40;concat &amp;#40;projectile-project-root&amp;#41; .... &amp;#41; ;; 使用到 projectile-project-root
+    ...
+  &amp;#41;
+&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;可以使用 &lt;code&gt;progn&lt;/code&gt; 指令組合多組語句，可以在其中 &lt;code&gt;defun&lt;/code&gt; 或 &lt;code&gt;define-key&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;參考資料&quot;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;&lt;a href='http://emacser.com/eval-after-load.htm'&gt;用eval-after-load避免不必要的elisp包的加载&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Tue, 16 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-15-Windows中使用Spacemacs和clang-format/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-15-Windows中使用Spacemacs和clang-format/
+</link>
+<title>
+Windows中使用Spacemacs和clang-format
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;目前對於 clang-format 還沒有很深刻的理解&lt;/p&gt;&lt;p&gt;簡單只是為了把 c++ code 對齊和整理&lt;/p&gt;&lt;p&gt;首先到 clang-format 網站去下載，搜尋 LLVM Download Page&lt;/p&gt;&lt;p&gt;下載位置: &lt;a href='http://releases.llvm.org/download.html'&gt;http://releases.llvm.org/download.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt; 點選 Pre-Built Binaries 中的 Clang for Windows (32-bits) 或 (64-bits)&lt;/p&gt;&lt;p&gt;其中 64-bit 網址在此 &lt;a href=&quot;http://releases.llvm.org/5.0.1/LLVM-5.0.1-win64.exe&quot;&gt;http://releases.llvm.org/5.0.1/LLVM-5.0.1-win64.exe&lt;/a&gt;&lt;/p&gt;&lt;p&gt;安裝完記得將 emacs 重新開啟，相關的 terminal 也要重開（才有新的環境變數 ）&lt;/p&gt;&lt;p&gt;接著在 spacemacs 中你引入 C/C++ 套件的位置改成&lt;/p&gt;&lt;pre&gt;&lt;code&gt;dotspacemacs-configuration-layers
+'&amp;#40;
+  ...
+  &amp;#40;c-c++ :variables c-c++-enable-clang-support t&amp;#41; ;; 改成這樣
+  ...&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;接著重新讀取，使用指令 &lt;code&gt;sync-configuration-layers&lt;/code&gt; 或是指令 &lt;code&gt;M-m f e R&lt;/code&gt;&lt;/p&gt;&lt;p&gt;並進入你的 c++ 檔案，使用 &lt;code&gt;clang-format-buffer&lt;/code&gt; 對整個 buffer 做 formatting&lt;/p&gt;&lt;p&gt;或是 &lt;code&gt;clang-format-region&lt;/code&gt; 對選取區域做 formatting&lt;/p&gt;&lt;p&gt;剛開始可以先使用 &lt;code&gt;clang-format-region&lt;/code&gt; 避免 buffer 檔案太大造成 Spacemacs 當機一會兒&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;使用&amp;#95;.clang-format&amp;#95;自訂設置&quot;&gt;&lt;/a&gt;使用 .clang-format 自訂設置&lt;/h2&gt;&lt;p&gt;如果你有使用 &lt;code&gt;projectile&lt;/code&gt; 的話，可以在你專案的根目錄（可以用 &lt;code&gt;prjectile-project-info&lt;/code&gt; 查看）&lt;/p&gt;&lt;p&gt;中新增檔案 &lt;code&gt;.clang-format&lt;/code&gt; 來設定你的 clang-format&lt;/p&gt;&lt;p&gt;沒使用 &lt;code&gt;projectile&lt;/code&gt; 則是得在檔案位置路徑有 &lt;code&gt;.clang-format&lt;/code&gt; 檔案&lt;/p&gt;&lt;p&gt;如果你不知道 clang-format 要設定什麼&lt;/p&gt;&lt;p&gt;可以先在 command-line 或是 Spacemacs 中使用 shell 執行&lt;/p&gt;&lt;pre&gt;&lt;code&gt;clang-format -style=llvm -dump-config &amp;gt; .clang-format&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;裡面影響比較大主要是行數限制，預設是 80 ，可以調整成 127 或更大&lt;/p&gt;&lt;p&gt;網路上寫 0 也沒用還是會算 80 我沒有試過&lt;/p&gt;&lt;pre&gt;&lt;code&gt;ColumnLimit: 127&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;關於其他配置從 &lt;a href='https://github.com/leejayID/ClangFormat'&gt;代码格式化插件教程与配置&lt;/a&gt; 貼過來如下（只留下個人在意的部分）：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;# 基礎樣式
+BasedOnStyle: LLVM
+#
+# 縮排寬度
+IndentWidth: 4
+#
+# 大括號的換行模式&amp;#40;Attach，Stroustrup, Allman-所有大括號都換一行&amp;#41;
+BreakBeforeBraces: Allman
+#
+# 是否支持單行的if
+AllowShortIfStatementsOnASingleLine: false
+#
+# 是否允許單行迴圈
+AllowShortLoopsOnASingleLine: false
+#
+# Switch 中的 Case 是否進行縮排
+IndentCaseLabels: true
+#
+# 每行字元的位置，0 為不限制
+ColumnLimit: 0
+#
+# 註釋對齊
+AlignTrailingComments: true
+#
+# 括號後面加空格
+SpaceAfterCStyleCast: true
+#
+# 不在小括號裡面加空格
+SpacesInParentheses: false
+#
+# 不在中括號裡面加空格
+SpacesInSquareBrackets: false
+#
+# 指針對準
+DerivePointerAlignment: true
+#
+# @&amp;#91;&amp;#93;裡面兩邊的空格，預設為true
+SpacesInContainerLiterals: false
+#
+# 賦值前&amp;#40;=&amp;#41;的空格 預設為true
+SpaceBeforeAssignmentOperators: true
+#
+# 指針的位置
+PointerAlignment: Right
+#
+# 最大空的行數
+MaxEmptyLinesToKeep: 1&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;參考資料&quot;&gt;&lt;/a&gt;參考資料&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;&lt;a href='http://shoshino21.logdown.com/posts/448026-currently-in-clang-format-format'&gt;目前在用的 clang-format 格式 - 星野的 iOS 補(不)完計畫&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='https://github.com/leejayID/ClangFormat'&gt;代码格式化插件教程与配置 - leejayID/ClangFormat&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Mon, 15 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-04-Emacs-中清除游標後空白直到非空白字元/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-04-Emacs-中清除游標後空白直到非空白字元/
+</link>
+<title>
+Emacs 中清除游標後空白直到非空白字元
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;經常在打 code 時會遇到段落間，或是單行間因為修改而出現的大量空白&lt;/p&gt;&lt;p&gt;例如&lt;/p&gt;&lt;pre&gt;&lt;code&gt;// a 和 10 之間有大量空白
+int a  =                        10 ;
+//       &amp;#94;&amp;#126;&amp;#126;&amp;#126; 假設游標停在這&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;這時候可以讓游標停在 &lt;code&gt;=&lt;/code&gt; 後面，然後執行指令 &lt;code&gt;fixup-whitespace&lt;/code&gt; 即可&lt;/p&gt;&lt;p&gt;就會得到&lt;/p&gt;&lt;pre&gt;&lt;code&gt;int a  = 10 ;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;還有許多行中空白、換行以及縮進的操作，請看 &lt;code&gt;simple.el&lt;/code&gt; 檔案&lt;/p&gt;&lt;p&gt;可以透過 &lt;code&gt;C-h f&lt;/code&gt; 搜尋 &lt;code&gt;fixup-whitespace&lt;/code&gt; 進入到 &lt;code&gt;simple.el&lt;/code&gt; 中&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Thu, 04 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-03-Emacs-中透過指令建立-read-only-buffer/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-03-Emacs-中透過指令建立-read-only-buffer/
+</link>
+<title>
+Emacs 中透過指令建立 read-only buffer
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;有時候執行一些指令希望把結果訊息用 popup-window 顯示出來&lt;/p&gt;&lt;p&gt;這時候可以透過 insert 訊息到 buffer 之後轉 special-mode&lt;/p&gt;&lt;p&gt;這樣看完就可以透過 &lt;code&gt;q&lt;/code&gt; 退出 buffer 回到原本的 buffer&lt;/p&gt;&lt;p&gt;假設我們要 insert 紀錄的 log 檔案的話，可以使用：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;let &amp;#40;&amp;#40;new &amp;#40;get-buffer-create 暫時的buffer名稱&amp;#41;&amp;#41;
+      &amp;#40;current &amp;#40;current-buffer&amp;#41;&amp;#41;&amp;#41;
+     &amp;#40;switch-to-buffer new&amp;#41;
+     &amp;#40;insert-file-contents log檔案路徑&amp;#41;
+     &amp;#40;special-mode&amp;#41;&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;暫時的 buffer 名稱可以用 &lt;code&gt;&amp;#42;buffer-name&amp;#42;&lt;/code&gt; 表示&lt;/p&gt;&lt;p&gt;在把資訊 insert 到 buffer 後，透過 &lt;code&gt;&amp;#40;special-mode&amp;#41;&lt;/code&gt; 轉成 read-only 即可&lt;/p&gt;&lt;h3&gt;&lt;a name=&quot;參考資料&quot;&gt;&lt;/a&gt;參考資料&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/34432246/how-to-read-contents-of-the-file-programmatically-in-emacs&quot;&gt;https://stackoverflow.com/questions/34432246/how-to-read-contents-of-the-file-programmatically-in-emacs&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Wed, 03 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-02-Emacs-中處理檔名與路徑問題/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-02-Emacs-中處理檔名與路徑問題/
+</link>
+<title>
+Emacs 中處理檔名與路徑問題
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;在 Emacs 中經常會處理檔案名稱和路徑的問題&lt;/p&gt;&lt;p&gt;可以使用 &lt;code&gt;default-directory&lt;/code&gt; 來得到包含目前路徑的位置，此為變數&lt;/p&gt;&lt;p&gt;要換成 windows 路徑可以用底下方法&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;replace-regexp-in-string &amp;quot;\/&amp;quot; &amp;quot;\\\\&amp;quot; default-directory&amp;#41;
+&amp;quot;c:\\Users\\ricky\\foo\\bar&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果只是要檔案名稱可以用 &lt;code&gt;&amp;#40;buffer-name&amp;#41;&lt;/code&gt; 留意請要加括號，這是函數&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;buffer-name&amp;#41;
+&amp;quot;2018-01-02-Emacs-中處理檔名與路徑問題.org&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果是要檔案的完整路徑可以用 &lt;code&gt;&amp;#40;buffer-file-name&amp;#41;&lt;/code&gt; 一樣要加括號&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;buffer-file-name&amp;#41;
+&amp;quot;c:/Users/Ricky/lisp.rocks/resources/templates/org/posts/2018-01-02-Emacs-中處理檔名與路徑問題.org&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;有時候在 Windows 中常常會遇到包含空白的檔案路徑，得用雙引號包住&lt;/p&gt;&lt;p&gt;在 Emacs 中得使用類似 &lt;code&gt;&amp;#40;concat &amp;quot;\&amp;quot;&amp;quot; some-path-include-space &amp;quot;\&amp;quot;&amp;quot;&amp;#41;&lt;/code&gt; 的方式處理&lt;/p&gt;&lt;p&gt;也就是說，雙引號得用 &lt;code&gt;\&amp;quot;&lt;/code&gt; 來表達才不會有錯誤&lt;/p&gt;&lt;p&gt;如果你想在當前游標位置插入路徑，可以用 &lt;code&gt;C-u C-x C-e&lt;/code&gt; 的方式對上面三者求值&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Tue, 02 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2018-01-01-Emacs-中對特定-mode-綁定特定的-imenu-關鍵字/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2018-01-01-Emacs-中對特定-mode-綁定特定的-imenu-關鍵字/
+</link>
+<title>
+Emacs 中對特定 mode 綁定自訂 imenu 匹配
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;在寫程式的時候大家或多或少都有自己的習慣&lt;/p&gt;&lt;p&gt;例如註解有些特殊寫法、或是控制流程和命名會有特殊的習慣&lt;/p&gt;&lt;p&gt;一般的 imenu 只能做到很細的在例如 if/else , for-loop , switch 間跳轉&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;如果要在一些註解、或是變數宣告間跳轉，這種比較高階的匹配可以自訂 imenu&lt;/p&gt;&lt;p&gt;只需要 hook 住特定 mode 就可以了&lt;/p&gt;&lt;p&gt;例如我想在 octave-mode (也就是 Matlab mode) 綁定基本控制流程可以用：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;add-hook 'octave-mode-hook
+          &amp;#40;lambda &amp;#40;&amp;#41;
+            &amp;#40;setq imenu-generic-expression
+                  '&amp;#40;&amp;#40;&amp;quot;for-loop&amp;quot; &amp;quot;&amp;#94;for &amp;#42;\\&amp;#40;.&amp;#42;\\&amp;#41;&amp;quot; 1&amp;#41;
+                    &amp;#40;&amp;quot;if-else&amp;quot; &amp;quot;&amp;#94;if &amp;#42;\\&amp;#40;.&amp;#42;\\&amp;#41;&amp;quot; 1&amp;#41;
+                    &amp;#40;&amp;quot;switch&amp;quot; &amp;quot;&amp;#94;switch &amp;#42;\\&amp;#40;.&amp;#42;\\&amp;#41;&amp;quot; 1&amp;#41;
+                    &amp;#41;&amp;#41;&amp;#41;&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;也就是說，通用的格式如下：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;add-hook '&amp;#91;某某-mode&amp;#93;-hook
+          &amp;#40;lambda &amp;#40;&amp;#41;
+            &amp;#40;setq imenu-generic-expression
+                  '&amp;#40;&amp;#40;&amp;quot;&amp;#91;標題 1&amp;#93;&amp;quot; &amp;quot;&amp;#91;正則表達式 1&amp;#93;&amp;quot; 1&amp;#41;
+                    &amp;#40;&amp;quot;&amp;#91;標題 2&amp;#93;&amp;quot; &amp;quot;&amp;#91;正則表達式 2&amp;#93;&amp;quot; 1&amp;#41;
+                    &amp;#40;&amp;quot;&amp;#91;標題 3&amp;#93;&amp;quot; &amp;quot;&amp;#91;正則表達式 3&amp;#93;&amp;quot; 1&amp;#41;
+                    &amp;#41;&amp;#41;&amp;#41;&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果要更細緻地操作正則表達式，可以調整後面的數字來匹配 subexpression，基本可以用 1&lt;/p&gt;&lt;p&gt;如果要從頭匹配請用 &lt;code&gt;&amp;#94;&lt;/code&gt; 開頭，詳細請參考上方範例&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h3&gt;&lt;a name=&quot;參考資料&quot;&gt;&lt;/a&gt;參考資料&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='https://www.gnu.org/software/emacs/manual/html_node/elisp/Imenu.html'&gt;GNU Emacs - 22.5 Imenu&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Mon, 01 Jan 2018 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2017-12-30-C++API設計閱讀筆記/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2017-12-30-C++API設計閱讀筆記/
+</link>
+<title>
+〈C++API設計〉閱讀筆記
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;最近讀完了 &lt;a href='http://www.books.com.tw/products/0010633959'&gt;C++ API設計&lt;/a&gt; 中文版，覺得裡面有很多觀念很不錯，都是自己缺乏的知識&lt;/p&gt;&lt;p&gt;因此稍微在此把各節大綱做個簡要筆記，留做未來工作上做參考&lt;/p&gt;&lt;p&gt;尤其這本書的目錄含蠻詳細的，光是目錄就能當作一個 Checklist 來使用了&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h3&gt;&lt;a name=&quot;目錄的重點摘要（非書籍目錄，有個人的更改）&quot;&gt;&lt;/a&gt;目錄的重點摘要（非書籍目錄，有個人的更改）&lt;/h3&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;1 . 為什麼要使用 API&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;hr&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;1-1. 可以有更健壯的程式碼&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1-1-1. 隱藏實作細節&lt;/p&gt;&lt;p&gt;1-1-2. 提高程式碼壽命&lt;/p&gt;&lt;p&gt;1-1-3. 促進模組化&lt;/p&gt;&lt;p&gt;1-1-4. 減少重複的程式碼&lt;/p&gt;&lt;p&gt;1-1-5. 移除硬編碼&lt;/p&gt;&lt;p&gt;1-1-6. 易於改變實作&lt;/p&gt;&lt;p&gt;1-1-7. 易於優化&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;1-2. 可以提高程式碼重用性&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1-2-1. 更一般性的介面&lt;/p&gt;&lt;p&gt;1-2-2. 對於功能需求更深刻的了解&lt;/p&gt;&lt;p&gt;1-2-3. 顧及開發人員與客戶的共同利益&lt;/p&gt;&lt;p&gt;1-2-4. 全球化以及現代化的互相協作&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;1-3. 對平行開發可以更友善&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1-3-1. 簡化關聯開發工作&lt;/p&gt;&lt;p&gt;1-3-2. 提供簡單實作以便編譯與連結&lt;/p&gt;&lt;p&gt;1-3-3. 提早撰寫單元測試&lt;/p&gt;&lt;p&gt;1-3-4. 獨立工作並減少冗餘溝通&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h3&gt;&lt;a name=&quot;2.&amp;#95;api&amp;#95;的基本品質&quot;&gt;&lt;/a&gt;2. API 的基本品質&lt;/h3&gt;&lt;p&gt;&lt;hr&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;2-1. 問題領域塑模&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;2-1-1. 良好的抽象概念&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt; 1.  高層次概念的明確表達 ( ex: UML ) &lt;/p&gt;&lt;p&gt; 2.  不公開底層的實作 &lt;/p&gt;&lt;p&gt; 3.  操作是有意義的（ 對非技術人員是顯而易見的 ） &lt;/p&gt;&lt;p&gt; 4.  類別反映了名稱及其方法 &lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;2-1-2. 塑模關鍵物件 Object modeling&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt; 1.  定義主要物件的集合 &lt;/p&gt;&lt;p&gt; 2.  提供所需的操作 &lt;/p&gt;&lt;p&gt; 3.  界定物件彼此的關係 &lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;【 2-2. 隱藏實作細節 information hiding 】&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;2-2-1. 物理隱藏：宣告與定義&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;2-2-1-1. 宣告 declaration 引入名稱和型別給編譯器，沒有分配記憶體&lt;/p&gt;&lt;pre&gt;&lt;code&gt;extern int i
+
+class MyClass&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2-2-1-2. 定義 definition 提供型別結構的詳細資訊為變數分配記憶體&lt;/p&gt;&lt;pre&gt;&lt;code&gt;int i = 0 ;
+
+void MyFunc&amp;#40;int value&amp;#41;
+{
+ ...
+}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2-2-1-3. 一般來說在 .h 宣告，在 .cpp 定義&lt;/p&gt;&lt;p&gt;2-2-1-4. 在 .h 宣告且定義，會公開實作細節，是種不好的作法&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;2-2-2. 邏輯隱藏：封裝 Encapsulation&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;2-2-2-1. 封裝的目的是限制其他物件存取權限&lt;/p&gt;&lt;p&gt;2-2-2-2. 封裝是將 API 公共介面和底層實作分開的過程&lt;/p&gt;&lt;p&gt;2-2-2-3. 若沒有好的封裝，高昂代價的重構（refactoring）將無可避免&lt;/p&gt;&lt;p&gt;2-2-2-4. 透過程式語言存取的特性，將 API 資訊隱藏到最高&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;2-2-3. 隱藏成員變數&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;2-2-3-1. 封裝也可以是一種方法將資料操作方法的綁定&lt;/p&gt;&lt;p&gt;2-2-3-2. 良好的 API 永遠不公開成員變數&lt;/p&gt;&lt;p&gt;2-2-3-3. 資料成員成為 API 邏輯介面的話，應設定 getter / setter 間接存取&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt; getter / setter 進行間接存取的好處： &lt;/p&gt;&lt;p&gt; 1 . &lt;strong&gt;驗證&lt;/strong&gt; ：對輸入輸出參數進行驗證再進行操作 &lt;/p&gt;&lt;p&gt; 2 . &lt;strong&gt;延遲運算&lt;/strong&gt; ：對成本高昂的運算做條件控制，不到非不得已不執行 ( lazy evaluation ) &lt;/p&gt;&lt;p&gt; 3 . &lt;strong&gt;快取&lt;/strong&gt; ：儲存需要經常使用的值，被要求時直接返值 ( caching ) &lt;/p&gt;&lt;p&gt; 4 . &lt;strong&gt;額外的運算&lt;/strong&gt; ：當被嘗試存取特定變數時，順便進行其他操作 &lt;/p&gt;&lt;p&gt; 例如 (a) 留下存取紀錄 (b) 修改對應檔案 &lt;/p&gt;&lt;p&gt; 5 . &lt;strong&gt;通知&lt;/strong&gt; ：某些物件可能需要監聽某個變數是否被改變， &lt;/p&gt;&lt;p&gt; 例如 (a) 控制變數（ ex: progress bar） (b) 發出修改通知 &lt;/p&gt;&lt;p&gt; 6 . &lt;strong&gt;除錯&lt;/strong&gt; ：可能想要增加日誌（ log ）語句，或是增加 Assert 語句來執行一些假設 &lt;/p&gt;&lt;p&gt; 7 . &lt;strong&gt;同步&lt;/strong&gt; ：每當有值被存取時加入互斥鎖定（mutex locking） &lt;/p&gt;&lt;p&gt; 8-1. &lt;strong&gt;更細的存取控制 1&lt;/strong&gt; ：讓成員變數變 public ，讓使用者可以寫入，唯一理由只有效能 &lt;/p&gt;&lt;p&gt; 例如：對大量物件執行一個效能緊迫的迴圈（直接存取 public 比 getter / setter 快 2-3 倍） &lt;/p&gt;&lt;p&gt; 8-2. &lt;strong&gt;更細的存取控制 2&lt;/strong&gt; ：不提供 setter 使得參數為 read-only &lt;/p&gt;&lt;p&gt; 9 . &lt;strong&gt;維持不變的關係&lt;/strong&gt; ：將內部資料值進行彼此依賴 &lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;2-2-3-4. 資料成員應該總是被宣告為 private 而非 public 或 protected&lt;/p&gt;&lt;p&gt;2-2-3-5. 試著將 public 成員變數以 inline getter / setter 重寫並計時，看是否值得 public&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;2-2-4. 隱藏實作方法&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;2-2-4-1. 應該將類別穩定的介面和內部設計的實作分離&lt;/p&gt;&lt;p&gt;2-2-4-2. 切勿返回 private 成員變數的非 const 指標和參考，會破壞封裝&lt;/p&gt;&lt;p&gt;2-2-4-3. 採用 pimpl 慣用法，將實作細節完全隱藏&lt;/p&gt;&lt;p&gt;2-2-4-4. 如果不採用 pipml ，則可在 cpp 檔案中宣告 private 函式為 static ，而在表頭宣告為 private&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Sat, 30 Dec 2017 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2017-12-28-WindowsBatch處理appendToFile的方法/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2017-12-28-WindowsBatch處理appendToFile的方法/
+</link>
+<title>
+Windows batch 中處理 append file 的方法
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;在 Windows 中如果要透過 batch 來 append file 有三種方法&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h3&gt;&lt;a name=&quot;單行&amp;#95;append&quot;&gt;&lt;/a&gt;單行 Append&lt;/h3&gt;&lt;p&gt;如果內容單行可以解決，可以透過 &lt;code&gt;&amp;gt;&amp;gt; file.txt echo something&lt;/code&gt; 來做&lt;/p&gt;&lt;p&gt;這個指令特別的地方在於 &lt;code&gt;echo&lt;/code&gt; 可以放在 &lt;code&gt;&amp;gt;&amp;gt; file.txt&lt;/code&gt; 之後，沒有那麼直覺&lt;/p&gt;&lt;p&gt;如果遇到有空格或是特殊符號，可以先用 &lt;code&gt;set&lt;/code&gt; 的方法建立內容&lt;/p&gt;&lt;p&gt;但是因為 &lt;code&gt;set&lt;/code&gt; 完可能會有雙引號 &lt;code&gt;&amp;quot;&lt;/code&gt; ，要解除得用 &lt;code&gt;%VAR:&amp;quot;=%&lt;/code&gt; 處理&lt;/p&gt;&lt;pre&gt;&lt;code&gt;REM 1. 有空格
+set insertString1=&amp;quot;hello world&amp;quot;
+set insertString1=%insertString1%
+&amp;gt;&amp;gt; file1.txt echo insertString1
+
+REM 2. 有特殊字符（例如 &amp;lt; 和 &amp;gt; ）使用 &amp;#94; 前置處理
+set insertString2=&amp;quot;#include &amp;#94;&amp;lt;stdio&amp;#94;&amp;gt;&amp;quot;
+set insertString2=%insertString2%
+&amp;gt;&amp;gt; file2.txt echo insertString2&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h3&gt;&lt;a name=&quot;刪除舊有內容，全新&amp;#95;append&amp;#95;(&amp;#95;相當於&amp;#95;write&amp;#95;)&quot;&gt;&lt;/a&gt;刪除舊有內容，全新 Append ( 相當於 Write )&lt;/h3&gt;&lt;p&gt;可以透過 &lt;code&gt;type&lt;/code&gt; 指令完成，例如：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;type src&amp;#95;file.txt &amp;gt; target&amp;#95;file.txt&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h3&gt;&lt;a name=&quot;在原有內容上&amp;#95;append&quot;&gt;&lt;/a&gt;在原有內容上 Append&lt;/h3&gt;&lt;p&gt;然而更多的是在原有內容上 Append&lt;/p&gt;&lt;p&gt;所以可以透過 &lt;code&gt;copy /b&lt;/code&gt; 以及 &lt;code&gt;+&lt;/code&gt; 的方式處理：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;copy /b append&amp;#95;file.txt+src&amp;#95;file.txt append&amp;#95;file.txt&lt;/code&gt;&lt;/pre&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Thu, 28 Dec 2017 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2017-12-27-在Emacs中安靜地執行async-shell-command/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2017-12-27-在Emacs中安靜地執行async-shell-command/
+</link>
+<title>
+Emacs 中安靜地執行 async-shell-command
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;安靜地在 Emacs 中執行 async-shell-command 有兩種方式：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h3&gt;&lt;a name=&quot;1.&amp;#95;display-buffer-alist&quot;&gt;&lt;/a&gt;1. display-buffer-alist&lt;/h3&gt;&lt;p&gt;如果你想要對所有的 &lt;code&gt;async-shell-command&lt;/code&gt; 都安靜執行，可以透過：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;add-to-list 'display-buffer-alist
+  '&amp;#40;&amp;quot;\\&amp;#42;Async Shell Command\\&amp;#42;.&amp;#42;&amp;quot; display-buffer-no-window&amp;#41;&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在 Spacemacs 中可以把上面兩行加入在 &lt;code&gt;dotspacemacs/user-config&lt;/code&gt; 裡面&lt;/p&gt;&lt;p&gt;缺點是所有的 async shell command 都會被安靜執行，有時候有些 async shell command 我們還是希望跳出視窗提醒&lt;/p&gt;&lt;p&gt;例如執行一些執行 local server 的 command ，不然再開一個可能會開新的 port 所以我推薦第二個方法&lt;/p&gt;&lt;p&gt;&lt;br&gt; &lt;/p&gt;&lt;h3&gt;&lt;a name=&quot;2.&amp;#95;call-process-shell-command&quot;&gt;&lt;/a&gt;2. call-process-shell-command&lt;/h3&gt;&lt;p&gt;使用 &lt;code&gt;call-process-shell-command&lt;/code&gt; 要留意指令後需要添加 &lt;code&gt;nil 0&lt;/code&gt; 參數：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;call-process-shell-command
+    &amp;#40;async-shell-command 
+        ... ;; 做你想做的事情 
+       &amp;#41; nil 0&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;這種方式對個別 async-shell-command 可以分別操作，但是缺點是他會問你要不要開新的 buffer&lt;/p&gt;&lt;p&gt;如果你是有透過 after-save-hook 之類的會高頻率地呼叫 asnc-shellc-ommand，那這個方法會很煩&lt;/p&gt;&lt;p&gt;可能就要選第一個方法&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h3&gt;&lt;a name=&quot;3.&amp;#95;shell-command&amp;#95;+&amp;#95;kill-buffer&quot;&gt;&lt;/a&gt;3. shell-command + kill-buffer&lt;/h3&gt;&lt;p&gt;如果你的 shell-command 跑起來很快就結束，又會高頻率地呼叫到的話&lt;/p&gt;&lt;p&gt;可以考慮使用 shell-command 而非 async 然後搭配 kill-buffer 來解決一堆 shell command buffer 的問題&lt;/p&gt;&lt;p&gt;也就是說，把 call-process-shell-command 中換成：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;call-process-shell-command
+    &amp;#40;shell-command 
+        ... ;; 做你想做的事情 
+       &amp;#41;
+    &amp;#40;kill-buffer &amp;quot;&amp;#42;Shell Command Output&amp;#42;&amp;quot; nil 0&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;這樣即可，就留意可能會頓一下因為是在執行 shell-command&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Wed, 27 Dec 2017 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2017-12-27-Emacs中處理Windows路徑轉換/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2017-12-27-Emacs中處理Windows路徑轉換/
+</link>
+<title>
+Emacs 中處理 Windows 路徑轉換
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;在 Windows 中使用 Emacs 時，處理路徑轉換很麻煩，因為你從各種函數中拿到的路徑可能會有：&lt;/p&gt;&lt;p&gt;1 . 像是 Linux 系統中的路徑，例如 &lt;code&gt;&amp;#126;/.spacemacs.d/&lt;/code&gt;&lt;/p&gt;&lt;p&gt;2 . 像是 Windows 系統中的路徑，例如 &lt;code&gt;c:\ \ Users \ \ myName&lt;/code&gt; ( Spacemacs 默認 c 是小寫 )&lt;/p&gt;&lt;p&gt;3 . 又或是兩者的混合版本，例如 &lt;code&gt;c:/Users/myName&lt;/code&gt; ，這種最麻煩&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;這樣在背景執行例如 &lt;code&gt;async-shell-command&lt;/code&gt; 就會很不方便&lt;/p&gt;&lt;p&gt;所以通常就得在外面再包一層把路徑換掉的函數，使用的方法可以用：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;replace-regexp-in-string &amp;quot;\/&amp;quot; &amp;quot;\\\\&amp;quot; path&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;或是：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;&amp;#40;replace-regexp-in-string &amp;quot;/&amp;quot; &amp;#40;regexp-quote &amp;quot;\\&amp;quot;&amp;#41; path&amp;#41;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;這樣就沒問題了，搭配 &lt;code&gt;projectile-project-root&lt;/code&gt; 就能輕鬆在跟目錄下執行 bat scripts ！&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Wed, 27 Dec 2017 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/2017-12-26-回顧2017感謝篇/
+</guid>
+<link>
+http://lisp.rocks/posts-output/2017-12-26-回顧2017感謝篇/
+</link>
+<title>
+回顧2017 (感謝篇)
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;不知不覺又到了 2017 年尾，今年比起去年有了很大幅度的沉澱與成長&lt;/p&gt;&lt;p&gt;總結一句話的話，就是大概知道 &lt;strong&gt;「自己理想中的能力，與目前自己的大約差距」&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;我就依序在各方面做一些紀錄，同時也感謝一些朋友與前輩（以 GitHub ID 稱呼）&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;今年年初過年期間的那 7-8 天，我把 &lt;a href='https://github.com/emacs-china/Spacemacs-rocks'&gt;子龍山人的 Spacemacs Rocks&lt;/a&gt; 全部看完&lt;/p&gt;&lt;p&gt;從那時候起開始使用 &lt;a href='https://github.com/syl20bnr/spacemacs'&gt;Spacemacs&lt;/a&gt; ，我已經記不得 2016 我怎麼還願意使用 Emacs&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;今年要總結成長最多的，就是在使用 Emacs 這件事上面！&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;對我工作各方面都有 10x 效率 的提升&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;不過有兩個人對我使用 Emacs 有非常重要的影響，分別是：&lt;/p&gt;&lt;p&gt;1 . &lt;a href='https://github.com/emacs-tw/emacs-101-beginner-survival-guide'&gt;Emacs 101 新手求生指南&lt;/a&gt; 作者的 &lt;a href='https://github.com/kuanyui'&gt;kuanyui&lt;/a&gt;&lt;/p&gt;&lt;p&gt;2 . &lt;a href='http://coldnew.github.io/COSCUP2013_org-mode/slide.html'&gt;Org-mode : Emacs 下的瑞士軍刀&lt;/a&gt; 作者的 &lt;a href='https://github.com/coldnew'&gt;coldnew&lt;/a&gt;&lt;/p&gt;&lt;p&gt;這兩位大大都出沒在 &lt;a href='https://telegram.me/joinchat/CJbTID9kpknioj9rYv6zgg'&gt;Telegram 的 EmacsTW 頻道&lt;/a&gt; ，很熱心的解答了我許多問題&lt;/p&gt;&lt;p&gt;在 2016 我看 Emacs 101 新手指南時，經常在頻道中問很白癡的問題&lt;/p&gt;&lt;p&gt;但是那時候 kuanyui 大大都很熱心的解答，那時候我使用 &lt;a href='https://github.com/overtone/emacs-live'&gt;Emacs-live&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;印象最深刻是我在 Emacs 101 新手指南第二、三章的時候&lt;/p&gt;&lt;p&gt;第一次使用 C-x i 指令，插入另一份文件到目前文件之中，我覺得這功能實在太酷了！&lt;/p&gt;&lt;p&gt;在此之前，我除了 Matlab 以及大學用過的 DevC++ 之外，沒有任何編輯器使用經驗&lt;/p&gt;&lt;p&gt;這大概是我 2016 能活下來的原因吧，儘管是回顧 2017 ，但還是想在提一下 2016 的往事&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;除此之外，就是 &lt;a href='https://clojure.tw'&gt;ClojureTW&lt;/a&gt; 的 &lt;a href='https://github.com/cataska'&gt;cataska&lt;/a&gt; 大大從 2015 到現在(2017)一直堅持辦活動！&lt;/p&gt;&lt;p&gt;讓我保持著對 LISP 持續學習沒有中斷。&lt;/p&gt;&lt;p&gt;更重要的是，今年 Emacs 在 COSCUP2017 上面有單獨的議程軌！&lt;/p&gt;&lt;p&gt;更更更重要的是，我居然有機會可以上去分享！&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;可能對於其他都是 IT 業界、軟硬體工程師的許多朋友來說，這好像不是什麼大事情&lt;/p&gt;&lt;p&gt;但對於我來說，是一個很大的自信心的鼓舞和肯定，我很高興前輩們願意給予機會QQ！&lt;/p&gt;&lt;p&gt;我從以前都不是特別會寫程式的人，每次在 Telegram 看到大家著一堆名詞，我都不了解&lt;/p&gt;&lt;p&gt;其實內心還是有點小沮喪啦&amp;#x2026; 但更多就是多聽多學&amp;#x2026;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;像是 caasi 大大每次都會在 &lt;a href='http://cschat.tw'&gt;cschat.tw&lt;/a&gt; 上面分享很多很不錯的資訊，都來不及讀&lt;/p&gt;&lt;p&gt;我當然知道我的本業和大家差距很大，但大家討論的東西我真的非常有興趣&lt;/p&gt;&lt;p&gt;這中間 coldnew 和 irc 上面的 letoh 大大不嫌棄給我許多很基礎的回覆，和指引都很感謝&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;比起去年， &lt;strong&gt;今年下半年在 Telegram 上面耍白癡的頻率開始降低&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;很重要的原因，就是我慢慢對「設計模式」、「重構」、「寫測試」有了更清楚的概念&lt;/p&gt;&lt;p&gt;可以大概知道怎麼樣去 Google 搜尋，找到答案&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;除此之外，在日常中無形對我有正面影響的更多朋友，我也都十分感謝&lt;/p&gt;&lt;p&gt;例如 Carl, Rudi, Jeffery, Albert, whitglint, Mioaski, Superbil, pertercmd, b4283 &amp;#x2026;&lt;/p&gt;&lt;p&gt;以及 Twitter 上面許多陌生推友，例如 M157q 以及他的 RSS 機器人&lt;/p&gt;&lt;p&gt;但是還是有許多要學習的地方，會繼續努力，前進 2018 ！&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Tue, 26 Dec 2017 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/0099-01-03-Blog-範例-jsPDF/
+</guid>
+<link>
+http://lisp.rocks/posts-output/0099-01-03-Blog-範例-jsPDF/
+</link>
+<title>
+Blog 範例 - jsPDF
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;嘗試使用 &lt;a href='https://github.com/MrRio/jsPDF'&gt;jsPDF&lt;/a&gt; 來在文章中可以自己產生客製化文件的功能&lt;/p&gt;&lt;p&gt;尤其是中文的部分，使用到 &lt;a href='https://github.com/sphilee/jsPDF-CustomFonts-support'&gt;jsPDF-CustomFonts-support&lt;/a&gt; 這個套件搭配 jsPDF 使用&lt;/p&gt;&lt;pre&gt;&lt;code&gt;var doc = new jsPDF&amp;#40;&amp;#41;;
+
+// 設定字體為 王漢宗細圓體繁
+doc.addFont&amp;#40;'wt006.ttf', 'HanWangYenLight', 'normal'&amp;#41;;
+doc.setFont&amp;#40;'HanWangYenLight'&amp;#41;;
+
+// 測試中文內容
+doc.text&amp;#40;'&amp;#91;  &amp;#93; 1. 項目一', 10, 10&amp;#41;;
+doc.text&amp;#40;'&amp;#91;  &amp;#93; 2. 項目二', 10, 20&amp;#41;;
+doc.text&amp;#40;'&amp;#91;  &amp;#93; 3. 項目三', 10, 30&amp;#41;;
+doc.text&amp;#40;'&amp;#91;  &amp;#93; 4. 項目四', 10, 40&amp;#41;;
+doc.text&amp;#40;'&amp;#91;  &amp;#93; 5. 項目五', 10, 50&amp;#41;;
+
+doc.save&amp;#40;'jspdf-from-lisp-rocks.pdf'&amp;#41;;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;../../fonts/jspdf.customfonts.min.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;../../fonts/default_vfs.js&quot;&gt;&lt;/script&gt; &lt;div class=&quot;report&quot;&gt;&lt;/div&gt; &lt;button id=&quot;toPdfBtn&quot;&gt;Download PDF&lt;/button&gt; &lt;script src=&quot;../../data/jspdf-example.js&quot;&gt;&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Thu, 03 Jan 0099 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/0099-01-02-Blog-範例-Flowchartjs/
+</guid>
+<link>
+http://lisp.rocks/posts-output/0099-01-02-Blog-範例-Flowchartjs/
+</link>
+<title>
+Blog 範例 - flowchart.js
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;本文章只是單純測試本部落格如何使用 &lt;a href='https://github.com/adrai/flowchart.js/'&gt;flowchart.js&lt;/a&gt;&lt;/p&gt;&lt;p&gt;方便未來在文章中插入使用&lt;/p&gt;&lt;p&gt;&lt;script src=&quot;http://flowchart.js.org/raphael-min.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.8.0/flowchart.min.js&quot;&gt;&lt;/script&gt; &lt;div id=&quot;diagram&quot;&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt; &lt;div id=&quot;diagram2&quot;&gt;&lt;/div&gt; &lt;script src=&quot;../../data/flowchart-example.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Wed, 02 Jan 0099 00:00:00 +0800
+</pubDate>
+</item>
+<item>
+<guid>
+http://lisp.rocks/posts-output/0099-01-01-Blog-範例-Chartjs/
+</guid>
+<link>
+http://lisp.rocks/posts-output/0099-01-01-Blog-範例-Chartjs/
+</link>
+<title>
+Blog 範例 - Chart.js
+</title>
+<description>
+&lt;h1&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2&gt;&lt;a name=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;這篇僅單純在本部落格測試使用 &lt;a href='https://github.com/chartjs/Chart.js'&gt;Chart.js&lt;/a&gt; 的範例&lt;/p&gt;&lt;p&gt;方便未來文章中要插入資料圖表時做參考使用&lt;/p&gt;&lt;p&gt;&lt;script src=&quot;http://www.chartjs.org/dist/2.7.1/Chart.bundle.js&quot;&gt;&lt;/script&gt; &lt;canvas id=&quot;myChart&quot; width=&quot;400&quot; height=&quot;200&quot;&gt;&lt;/canvas&gt; &lt;script src=&quot;../../data/plot_example.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Tue, 01 Jan 0099 00:00:00 +0800
+</pubDate>
+</item>
+</channel>
+</rss>
