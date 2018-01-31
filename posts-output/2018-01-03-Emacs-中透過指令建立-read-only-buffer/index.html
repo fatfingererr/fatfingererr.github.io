@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>(print &quot;Lisp Rocks&quot;): Emacs 中透過指令建立 read-only buffer</title>
+    <link rel="canonical" href="http://lisp.rocks/posts-output/2018-01-03-Emacs-中透過指令建立-read-only-buffer/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/github.min.css">
+    <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> 
+    <link href="/css/screen.css" rel="stylesheet" type="text/css" />
+    <script>
+    window.klipse_settings = {
+        selector: '.language-klipse' // css selector for the html elements you want to klipsify
+    };
+    </script>
+    <script src="/js/highlight.pack.js" type="text/javascript"></script>
+    <script>
+    hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-title" href="/">(print &quot;Lisp Rocks&quot;)</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" style="position: absolute; right: 0;">
+            <ul class="nav navbar-nav">
+                <li ><a href="/">Home</a></li>
+                <li ><a href="/archives/">Archives</a></li>
+                
+                <li >
+                    <a href="/pages-output/about/">About</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+        <!--/.container-fluid -->
+    </nav>
+    <div>
+        <div>
+            <div>
+                <div id="content">
+                    
+<div id="post">
+    <div class="post-header">
+    <div id="post-meta" class="row">
+        
+    </div>
+    <h2>Emacs 中透過指令建立 read-only buffer</h2>
+        <div id="post-date">
+            January 3, 2018
+        </div>
+</div>
+<div>
+    
+    <h1><a name=""></a></h1><h2><a name=""></a></h2><p>有時候執行一些指令希望把結果訊息用 popup-window 顯示出來</p><p>這時候可以透過 insert 訊息到 buffer 之後轉 special-mode</p><p>這樣看完就可以透過 <code>q</code> 退出 buffer 回到原本的 buffer</p><p>假設我們要 insert 紀錄的 log 檔案的話，可以使用：</p><pre><code>&#40;let &#40;&#40;new &#40;get-buffer-create 暫時的buffer名稱&#41;&#41;
+      &#40;current &#40;current-buffer&#41;&#41;&#41;
+     &#40;switch-to-buffer new&#41;
+     &#40;insert-file-contents log檔案路徑&#41;
+     &#40;special-mode&#41;&#41;</code></pre><p>暫時的 buffer 名稱可以用 <code>&#42;buffer-name&#42;</code> 表示</p><p>在把資訊 insert 到 buffer 後，透過 <code>&#40;special-mode&#41;</code> 轉成 read-only 即可</p><h3><a name="參考資料"></a>參考資料</h3><ol><li><a href="https://stackoverflow.com/questions/34432246/how-to-read-contents-of-the-file-programmatically-in-emacs">https://stackoverflow.com/questions/34432246/how-to-read-contents-of-the-file-programmatically-in-emacs</a></li></ol>
+</div>
+
+<div id="post-tags">
+    <b>Tags: </b>
+    
+    <a href="/tags-output/emacs/">emacs</a>
+    
+</div>
+
+
+    <div id="prev-next">
+        
+        <a href="/posts-output/2018-01-04-Emacs-中清除游標後空白直到非空白字元/">&laquo; Emacs 中清除游標後空白直到非空白字元</a>
+        
+        
+        <a class="right" href="/posts-output/2018-01-02-Emacs-中處理檔名與路徑問題/">Emacs 中處理檔名與路徑問題 &raquo;</a>
+        
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+
+    <script type="text/javascript">
+        var disqus_config = function () {
+            this.page.url = "http://lisp.rocks/posts-output/2018-01-03-Emacs-中透過指令建立-read-only-buffer/";
+            this.page.identifier = "Emacs 中透過指令建立 read-only buffer";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//fatfingererr.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    
+</div>
+
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+        <footer>Copyright &copy;  fatfingererr
+            <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a> / Design by <a href="http://lambdafunk.com">Lambda Funk</a></p>
+        </footer>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+</body>
+
+</html>
